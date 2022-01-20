@@ -1,0 +1,2857 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)https://www.rda.go.kr/main/mainPage.do -->
+<html lang="ko" class=" js cssanimations csstransitions"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="robots" content="index,follow">
+	<script src="./농촌진흥청_files/jquery-1.12.4.min.js.다운로드"></script>
+	<!--[if lt IE 9]>
+	<script type="text/javascript" src="/js/html5shiv.min.js"></script>
+	<script type="text/javascript" src="/js/respond.min.js"></script>
+	<![endif]-->
+	
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="description" content="농촌진흥청">
+	<title>농촌진흥청</title>
+	<link rel="shortcut icon" href="https://www.rda.go.kr/inc/img/favicon.ico">
+
+	<!-- edited by kjs 20170214 : ****** 일때만 css 호출 폴더가 [css_m]으로 변경됨 -->
+
+
+	<!--[if lt IE 9]>
+		<script src="../inc/js/html5.js"></script>
+		<script src="../inc/js/respond.min.js"></script>
+	<![endif]-->
+	
+
+	<script type="text/javascript">
+	//<![CDATA[
+
+	// SNS 이동을 위한 함수
+	function goSnsLink(type) {
+
+		var frmreport = document.frmreport;
+
+		if(type == 'facebook') {
+			/*frmreport.target = "_blank"; 
+			frmreport.action = 'http://www.facebook.com/rdakorea';
+			frmreport.submit();*/
+			window.open("https://www.facebook.com/rdakorea");
+		} else if(type == 'blog') {
+			frmreport.target = "_blank"; 
+			frmreport.action = 'http://blog.naver.com/rda2448';
+			frmreport.submit();
+		} else if(type == 'twitter') {
+			// frmreport.target = "_blank"; 
+			// frmreport.action = 'https://twitter.com/love_rda';
+			// frmreport.submit();
+			window.open('https://twitter.com/love_rda', "main_pop", "");
+		}
+
+	}
+
+	/*쿠키*/
+	function getCookie(name){    
+		var wcname = name + '=';
+		var wcstart, wcend, end;
+		var i = 0;    
+
+		while(i <= document.cookie.length) {            
+			wcstart = i;
+			wcend   = (i + wcname.length);            
+			if(document.cookie.substring(wcstart, wcend) == wcname) {                    
+				if((end = document.cookie.indexOf(';', wcend)) == -1)                           
+					end = document.cookie.length;                    
+				return document.cookie.substring(wcend, end);            
+		    }            
+
+			i = document.cookie.indexOf('', i) + 1;            
+	  
+	    	if(i == 0) break;    
+		}    
+		return '';
+	} 
+
+	/*임시팝업*/
+	function openWindows(){
+		//alert("getCookie:["+getCookie('blogWebCafe')+"]");
+		if(getCookie('aiinfo2') != 'rangs2') {   
+			/*window.open("http://rda.go.kr/upload/pop_view3.html","popview2", "toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes, width=440, height=455");*/
+			//window.open("http://rda.go.kr/upload/pop_view6.html","popview6", "toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=yes, width=545, height=640");
+			//window.open("http://www.rda.go.kr/upload/pop_view_20170913.html","pop_view_20170913", "toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=yes, width=450, height=450");
+			window.open("http://www.rda.go.kr/upload/pop_view_20170928.html","pop_view_20170928", "toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=yes, width=332, height=436");
+		}
+		
+	}
+	/*임시팝업*/
+
+	/* 202112 60주년 홍보동영상 */		
+	function closeMp4(){
+		$('.mainVideo').hide();
+	}
+	
+	setTimeout(function(){
+		$('.mainVideo').fadeOut(3000, 'linear');
+	}, 13000);
+	
+	//하루동안 보이지 않기
+	function chkCookie(){
+		setCookie("video60year", "done", 1);//쿠키설정
+		closeMp4();
+	}
+	
+	function setCookie(name, value, expiredays) {
+		var todayDate = new Date();
+		todayDate.setDate(todayDate.getDate() + expiredays);
+		var Msg = name + "=" + escape(value) + "; path=/; expires=" + todayDate.toGMTString() + ";";
+		console.log(Msg);
+		document.cookie = Msg;
+	}
+	/* 202112 60주년 홍보동영상 */
+</script>
+
+<style type="text/css">
+.facebook_i {
+	position: absolute;
+	top: -61px;
+}
+
+</style>
+<!-- e : edited by kjs 20171123 : facebook CSS remove -->
+
+</head>
+
+<body>
+<!--<body>-->
+
+<!-- goSNS 이동을 위한 부분 -->
+<form name="frmreport" method="post">
+	<input type="hidden" name="mcode">
+</form>
+<!-- S wrap -->
+<div id="wrap"> 
+
+	<!-- S header -->
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="./농촌진흥청_files/jquery-1.12.4.min.js.다운로드"></script>
+<script src="./농촌진흥청_files/jquery-ui.min.js.다운로드"></script>
+
+
+
+
+
+
+
+
+  
+
+
+
+
+<!--	<script type="text/javascript" src="../inc/js_m/dialog/jquery-ui.js" ></script>  -->
+
+
+	<!-- <script type="text/javascript" src="../inc/js/dialog/jquery-ui.js" ></script> -->
+
+	<script type="text/javascript">
+	//<![CDATA[
+		
+	/* s : edited by kjs 20171124 : 신규모듈 */
+	function fSSOInit() {
+		
+		var flag = 'false';
+		var gubun = '';
+
+		if( flag == 'false' ) { // 세션이 없을경우
+		    if( gubun != 'Redirect' ) { // 맨처음 일경우 SSO 서버를 가기전
+		
+				var appendFrm = '<iframe id="ssoTmpFrm" name="ssoTmpFrm" style="display:none;" ></iframe>';
+		    
+				var currentUrl = "";
+
+		    	$("body").append(appendFrm);
+
+
+				with (document.frmSSO){
+		    		
+		    		currentUrl.value = "/loginResult.do";
+					method = "post";
+					target = "ssoTmpFrm";
+					submit();
+				}
+				//alert("fSSOInit START call_3");
+
+				$("#ssoTmpFrm").load(function(){
+		    		try {
+
+						var $trget = $(this).contents().find("*").find("#loginInfoArea");
+
+			    		if($trget.length > 0){
+							//alert(1);
+							//alert($trget.html());
+							$("#loginInfoArea").html($trget.html());
+			    			$("#ssoTmpFrm").remove();
+			    		}
+					} catch (e) {}
+		    	});
+
+			}
+		}
+	}
+	/* e : edited by kjs 20171124 : 신규모듈 */
+
+
+	
+	function notice_closeMobile_sms(setText){
+		closePop_sms();
+		$("#popLayer_sms").hide();
+	}
+
+	showPopup_sms = function() {
+		$("#popLayer_sms").show();
+		$("#popLayer_sms").center2();
+	}
+	/* e : edited by kjs 20180205 :  문자서비스(layer_Popup) */
+	
+	/* s : edited by kjs 20170817 : 국정기조(layer_Popup) */
+	function notice_closeMobile(setText){
+		var chkAt = $("#NoticeMobile").prop("checked");
+		$("#popLayer1").hide();
+	}
+
+	jQuery.fn.center = function () {
+	   // this.css("position","absolute");
+	   // this.css("z-index","999");
+	   // this.css("background","#fff");
+	   // this.css("border-bottom","1px solid grey");
+	   // this.css("top", Math.max(0, (($(window).height() - $(this).outerHeight()) / 2) + $(window).scrollTop()) + "px");
+	  //  this.css("left", Math.max(0, (($(window).width() - $(this).outerWidth()) / 2) + $(window).scrollLeft()) + "px");
+	    return this;
+	}
+	
+	showPopup = function() {
+		//$("#popLayer1").show();
+		//$("#popLayer1").center();
+	}
+	/* e : edited by kjs 20170817 : 국정기조(layer_Popup) */
+
+	/* s : edited by kjs 20170918 : 농정과제(layer_Popup) */
+	function notice_closeMobile2(setText){
+		//$("#popLayer2").hide();
+	}
+
+	jQuery.fn.center = function () {
+	   // this.css("position","absolute");
+	   // this.css("z-index","999");
+	   // this.css("background","#fff");
+	   // this.css("border-bottom","1px solid grey");
+	   // this.css("top", Math.max(0, (($(window).height() - $(this).outerHeight()) / 2) + $(window).scrollTop()) + "px");
+	   // this.css("left", Math.max(0, (($(window).width() - $(this).outerWidth()) / 2) + $(window).scrollLeft()) + "px");
+	    return this;
+	}
+	
+	showPopup2 = function() {
+		$("#popLayer2").show();
+		$("#popLayer2").center();
+	}
+	//]]>
+	/* e : edited by kjs 20170918 : 농정과제(layer_Popup) */
+
+	//<![CDATA[
+
+
+	// 조건식 추가(2017.02.02 by LJH)
+	//(국민의 소리 게시판 등 일부 메뉴에서 인쇄/스크랩 기능이 동작하지 않는 문제 해결을 위해 if($("#dialog").length > 0)을 추가)
+
+	$(document).ready(function() {
+
+
+
+		var quickCnt = 0;
+			
+		//창 열기 버튼을 클릭했을경우
+
+		$("#mailTechInfoBtn").on("click",function(){
+			quickCnt = quickCnt +1;
+			
+			
+				if(quickCnt ==1){
+					$("#quickSet").load("/quickService.do",function(){								
+					
+						$("#dialog").dialog({							
+							autoOpen:true, //자동으로 열리지않게					
+							position:[500,250], //x,y  값을 지정					
+							//"center", "left", "right", "top", "bottom"					
+							modal:true, //모달대화상자					
+							resizable:false, //크기 조절 못하게										
+							buttons:{					
+										"닫기":function(){					
+										$(this).dialog("close");					
+										}				
+									}					
+						});
+					});	
+				}
+				//alert("준비중입니다. \n (8월 10일부터 신청이 가능합니다.)");
+				//return false;
+		
+				$("#dialog").dialog("open"); //다이얼로그창 오픈
+				$("#dialog").dialog("option","position","center");
+		
+			});
+		
+			
+
+
+
+		/* function mailTechInfoPopup(){
+
+			alert("zz");
+
+			$('#mailTechInfo').dialog("open");
+
+		} */
+
+		/* edited by kjs 20170620 : deviceChk req Session Set */
+		$("#deviceChk").on("click",function(){
+		document.deviceChkFrm.submit();
+		});
+
+		var haederMenuChkBool = "true";
+		var mobileCheckChkBool = "";
+
+		if(haederMenuChkBool == "true" || mobileCheckChkBool != "1"){
+			//$('#header').css("display", "block");
+			//$('#site_link').css("display", "block");
+			//$('#footer_banner').css("display", "block");
+			$('.ftbody .ftcopy .ft_menu ul li.first').css("display", "block");
+			$('.second').css("display", "block");
+			$('.third').css("display", "block");
+			$('.fourth').css("display", "block");
+			$('.fifth').css("display", "block");
+			$('.sixth').css("display", "block");
+			$('.last').css("display", "block");
+			//alert("haederMenuChkBool pc");
+		}else{
+			//alert("haederMenuChkBool mobile");
+		}
+
+		
+
+	}); 
+
+	function mailPopup() {
+		var popurl = "/event/mailling/index.jsp";
+		//var wtop = 500;
+		//var wleft = 500;
+		//popopen = window.open(popurl, "mail_pop", "width=815px, height=940px, top=" + wtop + "px, left=" + wleft + "px");
+		window.open(popurl, '_blank');
+
+		return false;
+	}
+
+		//SSO//
+
+		/* s : edited by kjs 20171124 : 주석처리_03 */
+		//var ssoCheck = "null"; //사용없음
+		//var ssoGubun = ""; //사용없음
+		/* e : edited by kjs 20171124 : 주석처리_04 */
+
+
+		var mem_name = "";
+		var mem_org = "";
+		var mem_num = "";
+		var prg_interval = "null";
+		//SSO//
+
+
+		$(document).ready(function () {
+
+
+			$('.button-site a').click(function() {
+				var pos = $('#footer').position().top;
+
+				$("html, body").animate({scrollTop:pos},'slow');
+
+
+				if ($(this).hasClass('active')) {
+					$(this).removeClass('active');
+					$(this).text('관련기관 바로가기 서비스 전체보기');
+					$('.site').animate({height: '48'},200);
+				}
+				else {
+					$(this).addClass('active');
+					$(this).text('전체보기 닫기');
+					$('.site').animate({height: '650'},200);
+				}
+
+
+				$(this).focus();
+
+
+				return false;
+			});
+
+
+		});
+
+
+
+
+		var mem_name = "";
+		var mem_org = "";
+		var mem_num = "";
+		var prg_interval = "null";
+
+
+		// 검색 펑션 추가(2016.09.25. SIGNAL)
+		function do_TotalSearch(){  
+			document.RsaSearchForm1.submit();
+		}
+		
+		function do_TotalSearch2(){  
+			document.RsaSearchForm2.submit();
+		}
+
+
+
+		function do_TotalSearch(){ 
+			var target = eval(document.RsaSearchForm1); 
+			document.charset = 'utf-8'; 
+			var url = "https://www.nongsaro.go.kr/portal/search/nongsaroSearch.ps";
+			target.target = "_blank";
+			target.action = url;
+			target.method = "get";
+			target.submit();
+
+
+			document.charset = 'utf-8'; 
+		} 
+		
+		function do_TotalSearch2(){ 
+			var target = eval(document.RsaSearchForm2); 
+			document.charset = 'utf-8'; 
+			var url = "https://www.nongsaro.go.kr/portal/search/nongsaroSearch.ps";
+			target.target = "_blank";
+			target.action = url;
+			target.method = "get";
+			target.submit();
+
+			document.charset = 'utf-8'; 
+		} 
+
+
+		//인쇄버튼 클릭
+		$(document).ready(function() { 
+			$('#t_print').click(function() {
+				//var printURL = "/board/board_print.jsp";
+				//var win = window.open(printURL,"contentPrint",'width=780, height=680, menubar=no, scrollbars=yes,status=no,resizable=no');
+				window.print();
+			});
+		});
+
+
+		//스크랩 클릭
+		$(document).ready(function() { 
+			$('#t_scrap').click(function() {
+
+
+				var elemUserId = $("rda_s_userId");
+
+
+				if(elemUserId == null){
+					alert("This Object is null \n\nSystem관리자에게 문의 하세요");
+					return false; 
+				}
+
+
+				var rdaUserId ="";
+
+
+				if(rdaUserId == null || rdaUserId == "" || rdaUserId == "null"){
+					if (confirm ("로그인 한 후에 작성가능합니다.\n\n로그인 화면으로 이동하시겠습니까?") ){
+						location.href = '/passni/sso/spImGate.jsp?imType=login'; 
+					}
+				}else{
+					var windowLeft = (screen.width-640)/2;
+					var windowTop = (screen.height-480)/2;
+
+
+					var url = "/board/board_scrap_popup.jsp";
+					var win = window.open(url,"contentPrint",'width=720, height=680, menubar=no, scrollbars=yes,status=no,resizable=no');
+				}
+			});
+			//fSSOInit();
+		});
+
+		//시나리오 보기 클릭
+		$(document).ready(function() { 
+			$('#t_movie').click(function() {
+				var url = "/board/board_scenario.jsp";
+				var win = window.open(url,"contentPrint",'width=780, height=680, menubar=no, scrollbars=yes,status=no,resizable=no');
+			});
+		});
+
+		/* new_sso login 20150313 */
+		function actionSSO( imType ) {
+			if(imType == "login"){
+				//document.ssoLoginForm.target="_blank";
+				document.ssoLoginForm.submit();
+			}else if(imType == "logout"){
+				document.ssoLogoutForm.submit();
+			}else{
+				location.href = "/passni/sso/spImGate.jsp?imType=" + imType;
+			}
+		}
+		/* new_sso login 20150313 */
+
+		/* new 원격지원서비스 20151208 */
+		function actionRC() {
+			document.rcForm.submit();
+		}
+		/* new 원격지원서비스 20151208 */
+
+
+	//]]>
+	</script> 
+
+<!-- s : edited by kjs 20170621 : mobileChk Remote bool -->
+<form id="deviceChkFrm" name="deviceChkFrm" method="post" action="https://www.rda.go.kr/main/mainPage.do">
+	<input type="hidden" name="deviceChkParam" id="deviceChkParam" value="true">
+</form>
+<!-- e : edited by kjs 20170621 : mobileChk Remote bool -->
+
+
+<!-- scrapFrm -->
+
+<form id="scrapFrm" name="scrapFrm" method="post" action="https://www.rda.go.kr/">
+	<input type="hidden" name="prgId" value="">
+	<input type="hidden" name="boardId" value="">
+	<input type="hidden" name="dataNo" value="">
+	<input type="hidden" name="mode" value="scrapPopup">
+	<input type="hidden" id="rda_s_userId" value="" name="rda_s_userId">
+</form>
+
+
+<!-- scrapViewFrm -->
+
+<form id="scrapViewFrm" name="scrapViewFrm" method="post" action="https://www.rda.go.kr/">
+	<input type="hidden" name="scrp_no" value="245">
+	<input type="hidden" name="mode" value="scrapView">
+</form>
+
+
+<!-- ssoLoginForm -->
+<form name="ssoLoginForm" id="ssoLoginForm" method="post" action="https://www.rda.go.kr/SSOLegacy.do">
+	<input type="hidden" name="retUrl" value="">
+	<input type="hidden" name="failUrl" value="">
+	<input type="hidden" name="ssoGubun" value="Login">	
+	<input type="hidden" name="a" value="aaaa">
+	<input type="hidden" name="b" value="bbbb">
+</form>
+
+
+<!-- frmSSO -->
+
+<form name="frmSSO" id="frmSSO" method="post" action="https://www.rda.go.kr/SSOLegacy.do">
+	<input type="hidden" name="retUrl" value="">
+	<input type="hidden" name="failUrl" value="">
+	<input type="hidden" name="ssoGubun" value="Redirect">
+	<input type="hidden" name="currentUrl" value="">
+	<input type="hidden" name="a" value="aaaa">
+	<input type="hidden" name="b" value="bbbb">
+	<input type="hidden" name="sss" id="sss" value="">
+</form>
+
+
+<!-- 원격지원 처리부분(2016.10.19. SIGNAL) -->
+<form name="rcForm" id="rcForm" method="post" target="_blank" action="https://www.rda.go.kr/rc">
+</form>
+
+
+<form name="ssoLogoutForm" id="ssoLogoutForm" method="post" action="https://www.rda.go.kr/SSOLegacy.do?pname=spLogout">
+</form>
+
+	<!-- 공통 CSS -->
+	
+		
+		
+			<script src="./농촌진흥청_files/jquery-1.12.4.min.js.다운로드"></script>
+			<script src="./농촌진흥청_files/jquery-ui.min.js.다운로드"></script>
+		
+		<link rel="stylesheet" type="text/css" href="./농촌진흥청_files/default.css">
+		<link rel="stylesheet" type="text/css" href="./농촌진흥청_files/layout.css">
+
+		<!-- 메인 CSS -->
+		<link rel="stylesheet" type="text/css" href="./농촌진흥청_files/main.css">
+		
+		<!-- 공통 JS -->
+		
+		<script src="./농촌진흥청_files/common.js.다운로드"></script>
+		<script src="./농촌진흥청_files/nav.js.다운로드"></script>
+		<script src="./농촌진흥청_files/m_nav.js.다운로드"></script>
+		<!-- 메인 JS -->
+		<script src="./농촌진흥청_files/main.js.다운로드"></script> 
+		<script src="./농촌진흥청_files/modernizr.custom.28468.js.다운로드"></script>
+		<script src="./농촌진흥청_files/jquery.cslider.js.다운로드"></script>
+		<link rel="stylesheet" type="text/css" href="./농촌진흥청_files/daStyle.css">
+		<script type="text/javascript">
+			$(function() {
+			
+				$('#da-slider').cslider({
+					autoplay	: true,
+					bgincrement	: 450,
+					interval:8000
+				});
+			
+			});
+		</script>	
+
+		<!-- bxslider -->
+		<link rel="stylesheet" type="text/css" href="./농촌진흥청_files/jquery.bxslider.css">
+		<script src="./농촌진흥청_files/jquery.bxslider.min.js.다운로드"></script>
+
+	
+	
+	<!-- skip_nav -->
+	
+		<div id="skipToContent">
+			<a href="https://www.rda.go.kr/main/mainPage.do#main_container">본문바로가기</a>
+			<a href="https://www.rda.go.kr/main/mainPage.do#navi">주메뉴 바로가기</a>
+		</div>
+	
+	<!-- //skip_nav -->
+
+	<!-- header -->
+	<header id="header">
+		<div id="top_wrap" class="">
+			<h1 class="logo"><a href="javascript:void(0);" onclick="location.href=&#39;/main/mainPage.do&#39;"><img src="./농촌진흥청_files/rda_logo.png" alt="농촌진흥청"></a></h1>
+			<ul class="util">
+ 					
+					<li>
+						<a href="https://www.rda.go.kr/main/mainPage.do#" onclick="actionSSO(&#39;login&#39;)" title="로그인">로그인</a>
+						<!-- <a href="https://www.rda.go.kr/main/memberLoginForm.do?loginSite=portal" title="로그인">로그인</a>-->
+					</li>
+					<!--<li >
+						<span><a href="#wrap" onclick="javascript:actionSSO('join'); return false;" title="회원가입" id="ssoreg" style="z-index:99999" >회원가입</a></span>
+					</li>-->
+					<!--<li ><a href="#wrap" onclick="actionRC('login'); return false;" title="[새창알림] 원격지원">원격지원</a></li>-->
+				
+
+
+<!--
+
+				<li><a href="#"><span>로그인</span></a></li>
+				<li><a href="#"><span>회원가입</span></a></li>
+				<li><a href="#" target="_blank" title="[새창]원격지원"><span>원격지원</span></a></li>
+-->
+
+
+				<li class="eng"><a href="https://www.rda.go.kr/foreign/ten/" target="_blank" title="[새창]영문홈페이지"><span>ENGLISH</span></a></li>
+			</ul>
+
+			<!-- mobile-header -->
+			<button type="button" class="search-open mobile-only" title="검색"></button>
+			<button type="button" class="menu-open mobile-only" title="전체메뉴"></button>
+			<!-- //mobile-header -->
+
+				
+					
+						<div class="fr">
+							<div class="header_search mobile-search">
+								<div class="search_area">
+										<form name="RsaSearchForm1" onsubmit="return false;">
+										<input type="hidden" id="categoryName" name="categoryName" value="SCH01">
+										<input type="hidden" id="menuId" name="menuId" value="PS00007">
+										<input type="hidden" id="option" name="option" value="0">
+										<input type="hidden" id="sortOrdr" name="sortOrdr" value="01">
+											<label for="searchTxt">통합검색 선택</label>
+											<input type="text" id="searchTxt" name="searchWord" placeholder="검색어를 입력하세요" title="검색어를 입력하세요" onkeypress="if( event.keyCode==13 ){do_TotalSearch();}">
+											<button type="button" onclick="do_TotalSearch();return false;" class="search_btn" title="[새창]검색"></button>
+										</form>
+								</div>
+							</div>
+							<div class="header_link">
+								<a class="mois" href="javascript:void(0);" onclick="window.open(&#39;http://www.mois.go.kr/frt/sub/popup/p_taegugki_banner/screen.do&#39;, &#39;&#39;, &#39;width=800, height=900&#39;)" title="[새창]국가상징 알아보기"><span class="sr_only">국가상징 알아보기</span></a>
+								<a class="innogov" href="https://innogov.go.kr/" title="[새창]내일을 위한 정부혁신, 보다 나은 정부 새창열림" target="_blank"><span class="sr_only">보다나은 정부</span></a>
+							</div>
+						</div>
+					
+					
+		</div>
+
+		<div id="nav_wrap">
+			<strong class="hide">메인메뉴</strong>
+			<nav id="navi">
+				<ul class="menu">
+				 <!-- 정보공개 -->
+					<li> 
+						<a href="javascript:void(0);" onclick="location.href=&#39;/opp/opp.do?prgId=opp_opproot&#39; " id="gnb_01" class="depth01" title="정보공개" style="opacity: 1;">정보공개</a>
+						<div class="menuList ml01" style="">		
+							<div class="mlWrap">
+								<div class="mlCnt">									
+										<ul>
+											<li class="depth02"><a href="https://www.rda.go.kr/opp/opp.do?prgId=opp_opproot">정보공개제도</a>
+												<ul>
+													<li class="depth03"><a href="https://www.rda.go.kr/opp/opp.do?prgId=opp_opproot">정보공개제도안내</a></li>
+													<li class="depth03"><a href="https://www.open.go.kr/" target="_blank" title="[새창]정보공개청구">정보공개청구</a></li>
+													<li class="depth03"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=opp_oppnoinfo">비공개세부기준</a></li>
+												</ul>
+											</li>	
+										</ul>
+									
+										<ul>
+											<li class="depth02"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=opb_befpuctinfoQuery">사전정보공표</a>
+												<ul>
+													<li class="depth03"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=opb_befpuctinfoQuery">사전정보공표 목록</a></li>
+													<li class="depth03"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=opp_openinfoboard">공개정보방</a></li>
+													<li class="depth03"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=opl_oplmanual">기록관리정보</a></li>
+													<li class="depth03"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=opg_audrltopenEntry">감사결과공개</a></li>
+												</ul>
+											</li>											
+										</ul>
+										
+										<ul>
+											<li class="depth02"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=opq_infomenuQuery">정보목록</a></li>
+										</ul>
+
+										<ul>
+											<li class="depth02"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=opr_request">정책실명제</a>
+												<ul>
+													<li class="depth03"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=opr_request">국민신청실명제</a></li>
+													<li class="depth03"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=opr_pubreal">정책실명제</a></li>
+												</ul>
+											</li>											
+										</ul>
+
+										<ul>
+											<li class="depth02"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=oda_opendata">공공데이터개방</a></li>
+										</ul>
+									
+										<ul>
+											<li class="depth02"><a href="https://www.rda.go.kr/opp/odfApi_Im.do?mode=html&amp;prgId=odf_api">재정정보</a>
+												<ul>
+													<li class="depth03"><a href="https://www.rda.go.kr/opp/odfApi_Im.do?mode=html&amp;prgId=odf_api">일반재정</a></li>
+													<li class="depth03"><a href="https://www.rda.go.kr/opp/odf.do?mode=html&amp;prgId=odf_government">국고보조금</a></li>
+												</ul>
+											</li>											
+										</ul>	
+										
+										<ul>
+											<li class="depth02"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=chf_overseatrip">해외출장비</a>
+												<ul>
+													<li class="depth03"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=chf_overseatrip">기관장 해외출장비</a></li>
+													<li class="depth03"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=org_overseatrip">기관 해외출장비</a></li>
+												</ul>
+											</li>											
+										</ul>							
+								</div>
+								<div class="mlBG">
+									<span></span>
+									<span></span>
+									<span></span>
+									<span></span>
+									<span></span>
+								</div>
+							</div>
+						</div>
+					</li>	
+
+					
+			<!-- 민원 -->
+					<li>
+						<a href="javascript:void(0);" onclick="location.href=&#39;/subMain/minwonMain.do&#39; " id="gnb_02" class="depth01" title="민원" style="opacity: 1;">민원</a>
+						<div class="menuList ml03" style="">	
+							<div class="mlWrap">
+								<div class="mlCnt">		
+								
+										<ul>
+											<li class="depth02"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=min_cate1">국민의 소리</a>
+												<ul>
+													<li class="depth03"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=min_cate1">민원 이용안내 </a></li>
+													<li class="depth03"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=min_cate2">일반민원 신청 </a></li>
+													<li class="depth03"><a href="https://www.gov.kr/portal/minwon/search?searchType=incSearch&amp;thmCd=&amp;blgDeptCd=&amp;deptIncCD=1390000&amp;procIncGrpCD=&amp;lrgAstCd=&amp;mdmAstCd=&amp;smallAstCd=&amp;mwSet=on&amp;identityCd=&amp;srhQuery=&amp;realQuery=&amp;reQueryFlag=&amp;onLineYN=&amp;moblAppYN=&amp;rcvMthdCD=&amp;sort=" target="_blank" title="[새창]서식민원안내"> 서식민원 안내 </a></li>
+													<li class="depth03"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=min_cate4">나의 민원 조회 </a></li>
+													<li class="depth03"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=min_cate5">자주하는 질문 </a></li>
+													<li class="depth03"><a href="http://www.110.go.kr/ic.do?pi=chatCamMain" target="_blank" title="[새창]110화상상담">110화상 상담 </a></li>
+													<li class="depth03"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=pol_ecrnphEntry">전자공청회 </a></li>
+													<li class="depth03"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=pol_qstnforumEntry">정책토론 </a></li>
+													<li class="depth03"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=pol_qstnsurvEntry">설문조사 </a></li>
+												</ul>											
+											</li>	
+										</ul>
+										<ul>
+											<li class="depth02"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=min_cate7"> 신고함</a>
+												<ul>
+													<li class="depth03"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=min_cate7"> 부정부조리신고 </a></li>
+													<li class="depth03"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=min_cate8"> 클린 신고 센터 </a></li>
+													<li class="depth03"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=min_cate9"> 예산낭비신고센터 </a></li>
+													<li class="depth03"><a href="https://www.acrc.go.kr/acrc/board.do?command=searchDetail&amp;menuId=05020101" target="_blank" title="[새창]부패공익신고"> 부패공익신고 </a></li>
+												</ul>											
+											</li>	
+										</ul>
+
+										<ul>
+											<li class="depth02"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=sou_prisEntry">참여마당</a>
+												<ul>
+													<li class="depth03"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=sou_prisEntry">칭찬합시다 </a></li>
+													<li class="depth03"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=sou_contimpEntry">규제개선건의방 </a></li>
+													<li class="depth03"><a href="https://www.epeople.go.kr/nep/prpsl/prplCont/gnrlPrpslNtrcnContent.npaid" target="_blank" title="[새창]국민제안방">국민제안방 </a></li>
+													<li class="depth03"><a href="https://www.epeople.go.kr:8055/" target="_blank" title="[새창]공무원제안"> 공무원제안 </a></li>
+												</ul>											
+											</li>	
+										</ul>
+
+										<ul>
+											<li class="depth02"><a href="https://www.rda.go.kr/board/reformBoard.do?mode=list&amp;prgId=ref_controlReform">규제혁신정보</a>
+												<ul>
+													<li class="depth03"><a href="https://www.rda.go.kr/board/reformBoard.do?mode=list&amp;prgId=ref_controlReform">농업분야규제개혁 사례 </a></li>
+													<li class="depth03"><a href="https://www.rda.go.kr/board/reformBoard.do?mode=html&amp;prgId=ref_controlPresent">규제혁신 과제현황 </a></li>
+													<li class="depth03"><a href="https://www.rda.go.kr/board/reformBoard.do?mode=html&amp;prgId=ref_controlScreening">심사중인 규제법안 </a></li>
+													<li class="depth03"><a href="https://www.rda.go.kr/board/reformBoard.do?mode=html&amp;prgId=ref_controlReport">부처별보도자료 </a></li>
+													<li class="depth03"><a href="https://www.rda.go.kr/board/reformBoard.do?mode=html&amp;prgId=ref_controlInfo">규제법령정보 </a></li>
+													<li class="depth03"><a href="https://www.rda.go.kr/board/reformBoard.do?mode=html&amp;prgId=ref_controlData">규제혁신 홍보자료 </a></li>
+													<li class="depth03"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=peorequest">국민 규제입증요청</a></li>
+												</ul>											
+											</li>	
+										</ul>
+
+										<ul>
+											<li class="depth02"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=actnoticetwo">적극행정</a>
+												<ul>
+													<li class="depth03"><a href="http://www.mpm.go.kr/proactivePublicService/govdatacenter/definition/" target="_blank" title="[새창]제도소개">제도소개</a></li>
+													<li class="depth03"><a href="https://www.rda.go.kr/main/mainPage.do#" title="국민참여">국민참여</a>
+														<ul>
+															<li class="depth04"><a href="http://www.mpm.go.kr/proactivePublicService/recommand/intro/" target="_blank">적극행정 국민추천</a></li>
+															<li class="depth04"><a href="https://www.epeople.go.kr/nep/pttn/negativePttn/NegativePttnCotents.npaid" target="_blank">소극행정 신고</a></li>
+														</ul>
+													</li>
+
+													<li class="depth03"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=actnoticetwo">적극행정 자료실</a></li>
+													<li class="depth03"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=exclofficer">적극행정 우수공무원</a></li>
+												</ul>
+											</li>											
+										</ul>
+								</div>
+								<div class="mlBG">
+									<span></span>
+									<span></span>
+									<span></span>
+									<span></span>
+									<span></span>
+								</div>
+							</div>
+						</div>
+					</li>					
+
+								
+				 <!-- 농촌진흥사업 -->
+					<li> 
+						<a href="javascript:void(0);" onclick="location.href=&#39;/board/board.do?mode=html&amp;prgId=pln_mainbizQuery&#39;" id="gnb_03" class="depth01" title="농촌진흥사업" style="opacity: 1;">농촌진흥사업</a>
+						<div class="menuList ml02" style="">	
+							<div class="mlWrap">
+								<div class="mlCnt">									
+										
+										<ul>
+											<li class="depth02"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=pln_mainbizQuery">업무계획</a>
+												<ul>
+													<li class="depth03"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=pln_mainbizQuery">주요업무계획</a></li>
+													<li class="depth03"><a href="https://www.rda.go.kr/org/pln/pln_defaultQuery.do?mode=html&amp;prgId=pln_defaultQuery">농촌진흥사업 기본(시행)계획 </a></li>
+													<li class="depth03"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=gud_farmscienQuery">농업과학기술연구개발계획</a></li>
+													<li class="depth03"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=gud_farmguiddrvQuery">농촌지도사업추진계획</a></li>
+												</ul>											
+											</li>	
+										</ul>
+										
+										<ul>
+											<li class="depth02"><a href="https://www.rda.go.kr/org/gud/gud_rsachoutcomeQuery_2020.do?prgId=gud_rsachoutcomeQuery">연구성과 보고서</a>
+												<ul>
+													<li class="depth03"><a href="https://www.rda.go.kr/org/gud/gud_rsachoutcomeQuery_2020.do?prgId=gud_rsachoutcomeQuery">2020</a></li>
+												</ul>	
+												<ul>
+													<li class="depth03"><a href="https://www.rda.go.kr/org/gud/gud_rsachoutcomeQuery_2019.do?prgId=gud_rsachoutcomeQuery2019">2019</a></li>
+												</ul>	
+												<ul>
+													<li class="depth03"><a href="https://www.rda.go.kr/org/gud/gud_rsachoutcomeQuery.do?prgId=gud_rsachoutcomeQuery2018">2018</a></li>
+												</ul>	
+												<ul>
+													<li class="depth03"><a href="https://www.rda.go.kr/main/resultCard.do?mode=list&amp;prgId=resultCard">2018 이전</a></li>
+												</ul>	
+											</li>
+										</ul>
+									
+										<ul>
+											<li class="depth02"><a href="https://www.rda.go.kr/gudPortal.do?prgId=gud_rsachsucsQuery&amp;gubun=1585">정부연구개발사업우수성과</a></li>	
+										</ul>
+								</div>
+								<div class="mlBG">
+									<span></span>
+									<span></span>
+									<span></span>
+									<span></span>
+									<span></span>
+								</div>
+							</div>
+						</div>
+					</li>	
+
+					<!-- 홍보 -->
+					<li> 
+						<a href="javascript:void(0);" onclick="location.href=&#39;/board/board.do?mode=list&amp;prgId=nei_ancmttEntry&#39; " id="gnb_04" class="depth01" title="홍보" style="opacity: 1;">홍보</a>
+						<div class="menuList ml04" style="">	
+							<div class="mlWrap">
+								<div class="mlCnt">	
+								
+										<ul>
+											<li class="depth02"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=nei_ancmttEntry">새소식</a>
+												<ul>
+													<li class="depth03"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=nei_ancmttEntry">공지사항 </a></li>
+													<li class="depth03"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=day_farmprmninfoEntry">보도자료 </a></li>
+													<li class="depth03"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=spe_truelike&amp;list_kind=defaule">설명/해명 </a></li>
+													<li class="depth03"><a href="https://www.rda.go.kr/board/board.do?mode=view&amp;prgId=nei_mainevntEntry">주요행사계획 </a></li>
+													<li class="depth03"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=day_ppemoventEntry">인물/동정 </a></li>
+													<li class="depth03"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=day_farmlcltinfoEntry">농촌지방소식 </a></li>
+												</ul>											
+											</li>	
+										</ul>
+
+										<ul>
+											<li class="depth02"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=syb_pubctebookEntry">사이버구독</a>
+												<ul>
+
+													<li class="depth03"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=syb_pubctebookEntry">월간농업기술</a></li>
+													<li class="depth03"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=syb_newsletterEntry">소식지</a></li>
+													<li class="depth03"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=syb_webzineEntry">그린매거진</a></li>
+												</ul>											
+											</li>	
+										</ul>
+										<ul>
+											<li class="depth02"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=con_movie">홍보콘텐츠</a>
+												<ul>
+													<li class="depth03"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=con_movie">동영상 </a></li>
+													<li class="depth03"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=con_cardnews">카드뉴스 </a></li>
+													
+													<li class="depth03"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=igt_infograpEntry">인포그래픽 </a></li>
+												</ul>											
+											</li>	
+										</ul>
+										<ul>
+											<li class="depth02"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=pto_photobankQuery">사진마당</a>
+												<ul>
+													<li class="depth03"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=pto_photobankQuery">사진마당이용안내 </a></li>
+													<li class="depth03"><a href="https://www.rda.go.kr/ptoPtoFrmPrmnList.do?prgId=pto_farmprmnptoEntry">사진검색 </a></li>
+													<li class="depth03"><a href="https://www.rda.go.kr/ptoPtoOriAplnList.do?prgId=pto_ptooriaplnEntry">사진원화신청현황 </a></li>
+													<li class="depth03"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=day_potobizEntry">사진으로보는사업 </a></li>
+												</ul>											
+											</li>	
+										</ul>
+								</div>
+								<div class="mlBG">
+									<span></span>
+									<span></span>
+									<span></span>
+									<span></span>
+									<span></span>
+								</div>
+							</div>
+						</div>
+					</li>
+				
+
+				<!-- 행정 -->
+					<li> 
+						<a href="javascript:void(0);" onclick="location.href=&#39;/board/board.do?mode=list&amp;prgId=acp_adopancmEntry&#39; " id="gnb_05" class="depth01" title="행정" style="opacity: 1;">행정</a>
+						<div class="menuList ml05" style="">	
+							<div class="mlWrap">
+								<div class="mlCnt">
+										<ul>
+											<li class="depth02"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=acp_adopancmEntry">채용·인사정보</a>
+												<ul>
+													<li class="depth03"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=acp_adopancmEntry">채용공고</a></li>
+													<li class="depth03"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=acp_adopqnaEntry">채용 Q&amp;A</a></li>
+													<li class="depth03"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=acp_hrmngEntry">인사관리</a></li>
+												</ul>											
+											</li>	
+										</ul>
+
+										<ul>
+											<li class="depth02"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=bid_bidancmEntry">입찰정보</a>	
+												<ul>
+													<li class="depth03"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=bid_bidancmEntry">입찰공고</a></li>
+													<li class="depth03"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=bid_cndtbasEntry">집행기준</a></li>
+												</ul>											
+											</li>	
+										</ul>
+
+										<ul>
+											<li class="depth02"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=eva_gvmtbizevlinfoQuery">정부업무평가</a>		
+												<ul>
+													<li class="depth03"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=eva_gvmtbizevlinfoQuery">정부업무평가소개</a></li>
+													<li class="depth03"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=eva_gvmtbizancEntry">정부업무공지</a></li>
+													<li class="depth03"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=eva_evldataEntry">평가자료실</a></li>
+												</ul>											
+											</li>	
+										</ul>
+
+										<ul>
+											<li class="depth02"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=law_rdalwEntry">법령정보</a>
+												<ul>
+													<li class="depth03"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=law_rdalwEntry">농촌진흥청 법령</a></li>
+													<li class="depth03"><a href="http://www.law.go.kr/" target="_blank" title="[새창]국가법령정보센터"> 국가법령정보센터</a></li>
+												</ul>											
+											</li>	
+										</ul>
+
+										<ul>
+											<li class="depth02"><a href="http://www.nati.or.kr/kno/knoAipsList.do?selPrgId=pat_knoAips" target="_blank" title="[새창]특허">특허</a></li>		
+										</ul>
+									
+										<ul>
+											<li class="depth02"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=adm_atcmngtrasEntry">행정운영정보</a>
+												<ul>
+													<li class="depth03"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=adm_atcmngtrasEntry">물품관리정보 </a></li>
+													<li class="depth03"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=adm_nassinfoopenEntry&amp;boardId=nassinfoopen&amp;catgId=nassinfoopen_01">국회관련정보공개 </a></li>
+													<li class="depth03"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=adm_gvmtbordEntry">정부위원회활동현황 </a></li>
+													<li class="depth03"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=plc_nonpcorpEntry">비영리법인등록현황 </a></li>
+													<li class="depth03"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=adm_mortalEntry">공직윤리 </a></li>
+												</ul>											
+											</li>	
+										</ul>
+
+								</div>
+								<div class="mlBG">
+									<span></span>
+									<span></span>
+									<span></span>
+									<span></span>
+									<span></span>
+								</div>
+							</div>
+						</div>
+					</li>				
+
+
+				<!-- 기관소개 -->
+					<li> 
+						<a href="javascript:void(0);" onclick="location.href=&#39;/board/board.do?mode=html&amp;prgId=ogi_hstyQuery&#39; " id="gnb_06" class="depth01" title="기관소개" style="opacity: 1;">기관소개</a>
+						<div class="menuList ml06" style="">
+							<div class="mlWrap">
+								<div class="mlCnt">		
+								
+										<ul>
+											<li class="depth02"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=ogi_hstyQuery">기관안내</a>
+												<ul>
+													<li class="depth03"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=ogi_hstyQuery">연혁 </a></li>
+													<li class="depth03"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=ogi_visnmisnQuery">미션과비전 </a></li>
+													<li class="depth03"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=ogi_budgQuery">예산 </a></li>
+												</ul>											
+											</li>	
+										</ul>
+										<ul>
+											<li class="depth02"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=ogi_orgfnbrQuery">조직안내</a>
+												<ul>
+													<li class="depth03"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=ogi_orgfnbrQuery">조직도·정원 </a></li>
+													<li class="depth03"><a href="https://www.rda.go.kr/ogiSffintrList.do?prgId=ogi_sffintrEntry">직원소개 </a></li>
+													<li class="depth03"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=ogi_ciintrQuery">CI소개 </a></li>
+													<li class="depth03"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=ogi_catrintrQuery">캐릭터소개 </a></li>
+												</ul>											
+											</li>	
+										</ul>
+
+										<ul>
+											<li class="depth02"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=idu_drctgrtgQuery">청·차장소개</a>
+												<ul>
+													<li class="depth03"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=idu_drctgrtgQuery">청장인사말 </a></li>
+													<li class="depth03"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=idu_drctitrEntry">청·차장공간 </a>
+														<ul>
+																<li class="depth04"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=idu_drctitrEntry">청장소개 </a></li>
+																<li class="depth04"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=idu_dpudhitrEntry">차장소개 </a></li>
+																<li class="depth04"><a href="https://www.rda.go.kr/idu.do?prgId=idu_drctschEntry&amp;gubun=1523&amp;ctx=minister&amp;whatKindOfSearch=1">청 ·차장일정 </a></li>
+																<li class="depth04"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=pps_bizdrvopenEntry">업무추진비 공개 </a></li>
+																<li class="depth04"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=idu_drctphotoEntry">청장활동앨범 </a></li>
+																<li class="depth04"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=idu_drctdiagEntry">청장과의 대화 </a></li>
+														</ul>
+                                                     </li>
+													<li class="depth03"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=idu_orgdrctitrEntry">소속기관장소개 </a></li>
+													<li class="depth03"><a href="https://www.rda.go.kr/idu.do?prgId=idu_hstydrctEntry&amp;gubun=1524">역대청·차장장명단 </a></li>
+
+												</ul>											
+											</li>	
+										</ul>
+										<ul>
+											<li class="depth02"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=sea_suwonoctyQuery">찾아오시는길</a>
+												<ul>
+													<li class="depth03"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=sea_suwonoctyQuery">전주시내 </a></li>
+													<li class="depth03"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=sea_suwonictyQuery">전주시외 </a></li>
+													<li class="depth03"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=sea_farmintQuery">농촌진흥청 내부 </a></li>
+												</ul>											
+											</li>	
+										</ul>
+								</div>
+								<div class="mlBG">
+									<span></span>
+									<span></span>
+									<span></span>
+									<span></span>
+									<span></span>
+								</div>
+							</div>
+						</div>
+					</li>	
+			
+				</ul>
+				
+				<button class="btn_fullmenu" title="전체메뉴 열기">
+					<span class="sr_only">전체메뉴 열기</span>
+				</button>
+				<div class="header_nongsaro">
+					<a href="https://www.nongsaro.go.kr/" class="header_nongsaro_link" target="_blank" title="[새창]농사로"><span>농업기술포털</span><img src="./농촌진흥청_files/nongsaro_logo.png" alt="농사로"></a>
+				</div>
+			</nav>
+
+			<!-- allMenuNav -->	
+			<div id="mainNav">
+				
+				<div class="wrap">
+				
+				<!-- mobile-scroll -->
+				<div class="mobile-scroll">
+					<button type="button" class="menu-close mobile-only"></button>
+					<h2>전체메뉴</h2>
+					<mobile-login>
+					<ul class="util-menu mobile-only">				
+						<li class="login-mobile">
+						
+							<!--<a href="https://www.rda.go.kr/main/memberLoginForm.do?loginSite=portal" class="loGin"><span>로그인해주세요.</span></a> -->
+							<a href="https://www.rda.go.kr/main/mainPage.do#" onclick="actionSSO(&#39;login&#39;)" class="loGin"><span>로그인해주세요.</span></a>
+						
+						</li>
+					</ul>
+					</mobile-login>
+					<ul class="allMenuNav">
+						<!-- 정보공개 -->
+						<li class="depth1m">
+							<a href="javascript:void(0);" title="정보공개">정보공개</a>
+							<ul class="depth2m">
+								<li class="d2m"><a href="https://www.rda.go.kr/opp/opp.do?prgId=opp_opproot" class="parent">정보공개제도</a>
+									<ul class="depth3m">
+									<li class="depth03"><a href="https://www.rda.go.kr/opp/opp.do?prgId=opp_opproot">정보공개제도안내</a></li>
+										<li class="d3m"><a href="https://www.open.go.kr/" target="_blank" title="[새창]정보공개청구">정보공개청구</a></li>
+										<li class="d3m"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=opp_oppnoinfo">비공개세부기준</a></li>
+									</ul>
+								</li>
+								<li class="d2m"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=opb_befpuctinfoQuery" class="parent">사전정보공표</a>
+									<ul class="depth3m">
+										<li class="d3m"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=opb_befpuctinfoQuery">사전정보공표 목록</a></li>
+										<li class="d3m"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=opp_openinfoboard">공개정보방</a></li>
+										<li class="d3m"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=opl_oplmanual">기록관리정보</a></li>
+										<li class="d3m"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=opg_audrltopenEntry">감사결과공개</a></li>
+									</ul>
+								</li>
+								<li class="d2m"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=opq_infomenuQuery">정보목록</a></li>
+								<li class="d2m"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=opr_request" class="parent">정책실명제</a>
+									<ul class="depth3m">
+										<li class="d3m"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=opr_request">국민신청실명제</a></li>
+										<li class="d3m"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=opr_pubreal">정책실명제</a></li>
+									</ul>
+								</li>							
+								<li class="d2m"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=oda_opendata">공공데이터개방</a></li>
+								<li class="d2m"><a href="https://www.rda.go.kr/opp/odfApi_Im.do?mode=html&amp;prgId=odf_api" class="parent">재정정보</a>
+									<ul class="depth3m">
+										<li class="d3m"><a href="https://www.rda.go.kr/opp/odfApi_Im.do?mode=html&amp;prgId=odf_api">일반재정</a></li>
+										<li class="d3m"><a href="https://www.rda.go.kr/opp/odf.do?mode=html&amp;prgId=odf_government">국고보조금</a></li>
+									</ul>
+								</li>
+								<li class="d2m"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=chf_overseatrip" class="parent">해외출장비</a>
+									<ul class="depth3m">
+										<li class="d3m"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=chf_overseatrip">기관장 해외출장비</a></li>
+										<li class="d3m"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=org_overseatrip">기관 해외출장비</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+
+
+						<!-- 민원 -->
+						<li class="depth1m">
+							<a href="javascript:void(0);" title="민원">민원</a>
+							<ul class="depth2m">
+								<li class="d2m"><a href="https://www.rda.go.kr/subMain/minwonMain.do">민원</a></li>
+								<li class="d2m"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=min_cate1" class="parent">국민의 소리</a>
+									<ul class="depth3m">
+										<li class="d3m"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=min_cate1">민원 이용안내</a></li>
+										<li class="d3m"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=min_cate2">일반민원 신청</a></li>
+										<li class="d3m"><a href="https://www.gov.kr/portal/minwon/search?searchType=incSearch&amp;thmCd=&amp;blgDeptCd=&amp;deptIncCD=1390000&amp;procIncGrpCD=&amp;lrgAstCd=&amp;mdmAstCd=&amp;smallAstCd=&amp;mwSet=on&amp;identityCd=&amp;srhQuery=&amp;realQuery=&amp;reQueryFlag=&amp;onLineYN=&amp;moblAppYN=&amp;rcvMthdCD=&amp;sort=" target="_blank" title="[새창]서식민원 안내">서식민원 안내</a></li>
+										<li class="d3m"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=min_cate4">나의 민원 조회</a></li>
+										<li class="d3m"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=min_cate5">자주하는 질문</a></li>
+										<li class="d3m"><a href="http://www.110.go.kr/ic.do?pi=chatCamMain" target="_blank">110화상 상담</a></li>
+										<li class="d3m"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=pol_ecrnphEntry">전자공청회</a></li>
+										<li class="d3m"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=pol_qstnforumEntry">정책토론</a></li>
+										<li class="d3m"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=pol_qstnsurvEntry">설문조사</a></li>
+									</ul>	
+								</li>
+								<li class="d2m"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=min_cate7" class="parent">신고함</a>
+									<ul class="depth3m">
+										<li class="d3m"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=min_cate7">부정부조리신고</a></li>
+										<li class="d3m"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=min_cate8">클린 신고 센터</a></li>
+										<li class="d3m"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=min_cate9">예산낭비신고센터</a></li>
+										<li class="d3m"><a href="https://www.acrc.go.kr/acrc/board.do?command=searchDetail&amp;menuId=05020101" target="_blank" title="[새창]부패공익신고">부패공익신고</a></li>
+									</ul>
+								</li>
+								<li class="d2m"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=sou_prisEntry" class="parent">참여마당</a>
+									<ul class="depth3m">
+										<li class="d3m"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=sou_prisEntry">칭찬합시다</a></li>
+										<li class="d3m"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=sou_contimpEntry">규제개선건의방</a></li>
+										<li class="d3m"><a href="https://www.epeople.go.kr/nep/prpsl/prplCont/gnrlPrpslNtrcnContent.npaid" target="_blank" title="[새창]국민제안방">국민제안방</a></li>
+										<li class="d3m"><a href="https://www.epeople.go.kr:8055/" target="_blank" title="[새창]공무원제안">공무원제안</a></li>
+									</ul>
+								</li>
+								<li class="d2m"><a href="https://www.rda.go.kr/board/reformBoard.do?mode=list&amp;prgId=ref_controlReform" class="parent">규제혁신정보</a>
+									<ul class="depth3m">
+										<li class="d3m"><a href="https://www.rda.go.kr/board/reformBoard.do?mode=list&amp;prgId=ref_controlReform">농업분야규제개혁 사례</a></li>
+										<li class="d3m"><a href="https://www.rda.go.kr/board/reformBoard.do?mode=html&amp;prgId=ref_controlPresent">규제혁신 과제현황</a></li>
+										<li class="d3m"><a href="https://www.rda.go.kr/board/reformBoard.do?mode=html&amp;prgId=ref_controlScreening">심사중인 규제법안 </a></li>
+										<li class="d3m"><a href="https://www.rda.go.kr/board/reformBoard.do?mode=html&amp;prgId=ref_controlReport">부처별보도자료</a></li>
+										<li class="d3m"><a href="https://www.rda.go.kr/board/reformBoard.do?mode=html&amp;prgId=ref_controlInfo">규제법령정보</a></li>
+										<li class="d3m"><a href="https://www.rda.go.kr/board/reformBoard.do?mode=html&amp;prgId=ref_controlData">규제혁신 홍보자료</a></li>
+										<li class="d3m"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=peorequest">국민 규제입증요청</a></li>
+									</ul>
+								</li>
+								<li class="d2m"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=actnoticetwo" class="parent">적극행정</a>
+									<ul class="depth3m">
+										<li class="d3m"><a href="http://www.mpm.go.kr/proactivePublicService/govdatacenter/definition/" target="_blank" title="[새창]제도소개">제도소개</a></li>
+										<li class="d3m"><a href="https://www.rda.go.kr/main/mainPage.do#" target="_blank" title="국민참여">국민참여</a>
+											<ul class="depth4m">
+												<li class="d4m"><a href="http://www.mpm.go.kr/proactivePublicService/recommand/intro/" target="_blank">적극행정 국민추천</a></li>
+												<li class="d4m"><a href="https://www.epeople.go.kr/nep/pttn/negativePttn/NegativePttnCotents.npaid" target="_blank">소극행정 신고</a></li>
+											</ul>
+										</li>
+<!-- 										<li class="d3m"><a href="/board/board.do?mode=list&prgId=actwebtn">카드뉴스·웹툰</a></li>
+										<li class="d3m"><a href="/board/board.do?mode=list&prgId=actmovie">영상</a></li> -->
+										<li class="d3m"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=actnoticetwo">적극행정 자료실</a></li>
+										<li class="d3m"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=exclofficer">적극행정 우수공무원</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+
+
+
+						<!-- 정책 -->
+						<li class="depth1m">
+							<a href="javascript:void(0);" title="농촌진흥사업">농촌진흥사업</a>
+							<ul class="depth2m">
+								<!-- <li class="d2m"><a href="/org/pln/pln_mainPolcyQuery.do"> 주요정책</a></li> -->		
+								<li class="d2m"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=pln_mainbizQuery" class="parent">업무계획</a>
+									<ul class="depth3m">
+										<li class="d3m"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=pln_mainbizQuery">주요업무계획</a></li>
+										<li class="d3m"><a href="https://www.rda.go.kr/org/pln/pln_defaultQuery.do?mode=html&amp;prgId=pln_defaultQuery">농촌진흥사업 기본(시행)계획</a></li>
+										<li class="d3m"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=gud_farmscienQuery">농업과학기술연구개발계획</a></li>
+										<li class="d3m"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=gud_farmguiddrvQuery">농촌지도사업추진계획</a></li>
+									</ul>
+								</li>
+								<li class="d2m"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=pln_mainbizQuery" class="parent">연구성과 보고서</a>
+									<ul class="depth3m">
+										<li class="d3m"><a href="https://www.rda.go.kr/org/gud/gud_rsachoutcomeQuery_2020.do?prgId=gud_rsachoutcomeQuery">2020</a></li>
+										<li class="d3m"><a href="https://www.rda.go.kr/org/gud/gud_rsachoutcomeQuery_2019.do?prgId=gud_rsachoutcomeQuery2019">2019</a></li>
+										<li class="d3m"><a href="https://www.rda.go.kr/org/gud/gud_rsachoutcomeQuery.do?prgId=gud_rsachoutcomeQuery2018">2018</a></li>
+										<li class="d3m"><a href="https://www.rda.go.kr/main/resultCard.do?mode=list&amp;prgId=resultCard">2018 이전</a></li>
+									</ul>
+								</li>
+								<li class="d2m"><a href="https://www.rda.go.kr/gudPortal.do?prgId=gud_rsachsucsQuery&amp;gubun=1585">정부연구개발사업우수성과</a></li>
+							</ul>
+						</li>
+
+						<!-- 홍보 -->
+						<li class="depth1m">
+							<a href="javascript:void(0);" title="홍보">홍보</a>
+							<ul class="depth2m">
+								<li class="d2m"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=nei_ancmttEntry" class="parent">새소식</a>
+									<ul class="depth3m">
+										<li class="d3m"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=nei_ancmttEntry">공지사항</a></li>
+										<li class="d3m"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=day_farmprmninfoEntry">보도자료</a></li>
+										<li class="d3m"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=spe_truelike&amp;list_kind=defaule">설명/해명</a></li>
+										<li class="d3m"><a href="https://www.rda.go.kr/board/board.do?mode=view&amp;prgId=nei_mainevntEntry">주요행사계획</a></li>
+										<li class="d3m"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=day_ppemoventEntry">인물/동정</a></li>
+										<li class="d3m"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=day_farmlcltinfoEntry">농촌지방소식 </a></li>
+									</ul>
+								</li>
+								<li class="d2m"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=syb_pubctebookEntry" class="parent">사이버구독</a>
+									<ul class="depth3m">
+										<li class="d3m"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=syb_pubctebookEntry">월간농업기술</a></li>
+										<li class="d3m"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=syb_newsletterEntry">소식지</a></li>
+										<li class="d3m"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=syb_webzineEntry">그린매거진</a></li>
+									</ul>
+								</li>
+								<li class="d2m"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=con_movie" class="parent">홍보콘텐츠</a>
+									<ul class="depth3m">
+										<li class="d3m"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=con_movie">동영상</a></li>
+										<li class="d3m"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=con_cardnews">카드뉴스</a></li>
+										
+										<li class="d3m"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=igt_infograpEntry">인포그래픽</a></li>
+									</ul>
+								</li>
+								<li class="d2m"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=pto_photobankQuery" class="parent">사진마당</a>
+									<ul class="depth3m">
+										<li class="d3m"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=pto_photobankQuery">사진마당이용안내</a></li>
+										<li class="d3m"><a href="https://www.rda.go.kr/ptoPtoFrmPrmnList.do?prgId=pto_farmprmnptoEntry">사진검색</a></li>
+										<li class="d3m"><a href="https://www.rda.go.kr/ptoPtoOriAplnList.do?prgId=pto_ptooriaplnEntry">사진원화신청현황</a></li>
+										<li class="d3m"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=day_potobizEntry">사진으로보는사업</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+
+						<!-- 행정 -->
+						<li class="depth1m">
+							<a href="javascript:void(0);" title="행정">행정</a>
+							<ul class="depth2m">
+								<li class="d2m"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=acp_adopancmEntry" class="parent">채용·인사정보 </a>
+									<ul class="depth3m">
+										<li class="d3m"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=acp_adopancmEntry">채용공고</a></li>
+										<li class="d3m"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=acp_adopqnaEntry">채용 Q&amp;A</a></li>
+										<li class="d3m"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=acp_hrmngEntry">인사관리</a></li>
+									</ul>
+								</li>
+								<li class="d2m"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=bid_bidancmEntry" class="parent">입찰정보</a>
+									<ul class="depth3m">
+										<li class="d3m"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=bid_bidancmEntry">집행기준</a></li>
+										<li class="d3m"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=bid_cndtbasEntry">입찰공고</a></li>
+									</ul>
+								</li>
+								<li class="d2m"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=eva_gvmtbizevlinfoQuery" class="parent">정부업무평가</a>
+									<ul class="depth3m">
+										<li class="d3m"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=eva_gvmtbizevlinfoQuery">정부업무평가소개</a></li>
+										<li class="d3m"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=eva_gvmtbizancEntry">정부업무공지</a></li>
+										<li class="d3m"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=eva_evldataEntry">평가자료실</a></li>
+									</ul>
+								</li>
+								<li class="d2m"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=law_rdalwEntry" class="parent">법령정보</a>
+									<ul class="depth3m">
+										<li class="d3m"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=law_rdalwEntry">농촌진흥청 법령</a></li>
+										<li class="d3m"><a href="http://www.law.go.kr/" target="_blank" title="[새창]국가법령정보센터">국가법령정보센터</a></li>
+									</ul>
+								</li>
+								<li class="d2m"><a href="http://www.nati.or.kr/kno/knoAipsList.do?selPrgId=pat_knoAips" target="_blank" title="[새창]특허">특허</a></li>
+								<li class="d2m"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=adm_atcmngtrasEntry" class="parent">행정운영정보</a>
+									<ul class="depth3m">
+										<li class="d3m"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=adm_atcmngtrasEntry">물품관리정보</a></li>
+										<li class="d3m"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=adm_nassinfoopenEntry&amp;boardId=nassinfoopen&amp;catgId=nassinfoopen_01">국회관련정보공개</a></li>
+										<li class="d3m"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=adm_gvmtbordEntry">정부위원회활동현황</a></li>
+										<li class="d3m"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=plc_nonpcorpEntry">비영리법인등록현황</a></li>
+										<li class="d3m"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=adm_mortalEntry">공직윤리</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+
+						<!-- 기관소개 -->
+						<li class="depth1m">
+							<a href="javascript:void(0);" title="기관소개">기관소개</a>
+							<ul class="depth2m">
+								<li class="d2m"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=ogi_hstyQuery" class="parent">기관안내</a>
+									<ul class="depth3m">
+										<li class="d3m"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=ogi_hstyQuery">연혁</a></li>
+										<li class="d3m"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=ogi_visnmisnQuery">미션과비전</a></li>
+										<li class="d3m"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=ogi_budgQuery">예산</a></li>
+									</ul>
+								</li>
+								<li class="d2m"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=ogi_orgfnbrQuery" class="parent">조직안내</a>
+									<ul class="depth3m">
+										<li class="d3m"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=ogi_orgfnbrQuery">조직도·정원</a></li>
+										<li class="d3m"><a href="https://www.rda.go.kr/ogiSffintrList.do?prgId=ogi_sffintrEntry">직원소개</a></li>
+										<li class="d3m"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=ogi_ciintrQuery">CI소개</a></li>
+										<li class="d3m"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=ogi_catrintrQuery">캐릭터소개</a></li>
+									</ul>
+								</li>
+								<li class="d2m"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=idu_drctgrtgQuery" class="parent">청·차장소개</a>
+									<ul class="depth3m">
+										<li class="d3m"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=idu_drctgrtgQuery">청장인사말</a></li>
+										<li class="d3m"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=idu_drctitrEntry" class="parent">청·차장공간</a>
+											<ul class="depth4m">
+												<li class="d4m"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=idu_drctitrEntry">청장소개</a></li>
+												<li class="d4m"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=idu_dpudhitrEntry">차장소개</a></li>
+												<li class="d4m"><a href="https://www.rda.go.kr/idu.do?prgId=idu_drctschEntry&amp;gubun=1523&amp;ctx=minister&amp;whatKindOfSearch=1">청 ·차장일정</a></li>
+												<li class="d4m"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=pps_bizdrvopenEntry">업무추진비 공개</a></li>
+												<li class="d4m"><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=idu_drctphotoEntry">청장활동앨범</a></li>
+												<li class="d4m"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=idu_drctdiagEntry">청장과의 대화</a></li>
+											</ul>
+										</li>
+										<li class="d3m"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=idu_orgdrctitrEntry">소속기관장소개</a></li>
+										<li class="d3m"><a href="https://www.rda.go.kr/idu.do?prgId=idu_hstydrctEntry&amp;gubun=1524">역대청·차장장명단</a></li>
+									</ul>
+								</li>						
+								<li class="d2m"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=sea_suwonoctyQuery" class="parent">찾아오시는길</a>
+									<ul class="depth3m">
+										<li class="d3m"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=sea_suwonoctyQuery">전주시내</a></li>
+										<li class="d3m"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=sea_suwonictyQuery">전주시외</a></li>
+										<li class="d3m"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=sea_farmintQuery">농촌진흥청 내부</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<!-- 사이버농업과학관 -->
+						<li class="depth1m rda_aeh">
+							<a href="javascript:void(0);" title="사이버농업과학관">사이버농업과학관</a>
+							<ul class="depth2m">
+								<li class="d2m"><a href="javascript:void(0);" class="parent">관람안내(예약센터)</a>
+									<ul class="depth3m">
+										<li class="d3m"><a href="https://www.rda.go.kr/board/aehBoard.do?prgId=ati_infoCenter">안내센터</a></li>
+										<li class="d3m"><a href="https://www.rda.go.kr/board/aehBoard.do?prgId=ati_reservationCenter&amp;tab=01">예약센터</a></li>
+										<li class="d3m"><a href="https://www.rda.go.kr/board/aehBoard.do?prgId=ati_touristInfomation&amp;tab=01">관람구역별안내</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+						<div class="util_link">
+							<a class="nongsaro" href="https://www.nongsaro.go.kr/" title="[새창]농업기술포털농사로" target="_blank"><img src="./농촌진흥청_files/nongsaro_logo.png" alt="농사로"></a>
+							<a class="btn rda" href="https://www.rda.go.kr/aehBoard/aeh_main.do?prgId=aeh_main&amp;tab=01" title="[새창]사이버농업과학관" target="_blank">사이버농업과학관</a>
+						</div>
+					</div>
+				</div>
+				<!-- //mobile-scroll-->
+
+				<button class="menuClose"><span>전체메뉴 닫기</span></button> 
+
+			</div>
+			<!-- //allMenuNav -->	
+
+		</div>
+
+	</header>
+	<!-- //header -->	
+<script type="text/javascript"><!-- 상단 메인메뉴 선택활성화 -->
+	
+
+</script>
+<!-- //wrap -->
+
+
+	<!-- // E header -->
+
+<div id="container">
+	<!-- 202112 60주년 홍보동영상 -->		
+	<section class="mainVideo" style="display: none;">		
+		<div class="video_wrap">
+			<video autoplay="autoplay" muted="muted" playsinline="">
+				<source src="/event/images/20211217.mp4" type="video/mp4">
+				브라우저가 비디오 태그를 지원하지 않습니다.
+			</video>
+		</div>
+		<div class="video_txt">	
+			<div><img src="./농촌진흥청_files/rda60_logo.png" alt="농촌진흥청 60년"></div>	
+			<div><img src="./농촌진흥청_files/rda60_txt.png" alt="농촌진흥청 60년"></div>					
+		</div>
+		<div class="btnVideo"><button onclick="closeMp4();"><span>닫기</span></button></div>  
+		<div class="bottom-txt">
+			<a href="https://www.rda.go.kr/main/mainPage.do#" onclick="chkCookie();"><span>오늘 하루 보지 않기</span></a>
+			<a href="https://www.rda.go.kr/main/mainPage.do#" onclick="chkCookie();"><span>닫기 X</span></a>
+		</div>
+	</section>
+ 	<script>
+ 	var blnCookie = getCookie("video60year");
+	console.log('쿠키유효값============>'+blnCookie);
+	if(blnCookie != "done") {
+		console.log('동영상 표시');
+		$('.mainVideo').show();
+	}	
+	</script>
+	<!-- //202112 60주년 -->
+	
+	<!-- main_container -->
+	<main id="main_container">
+	    <section class="main_Cont index00" id="content1">
+			<!-- 비쥬얼 시작 -->
+			<div id="da-slider" class="da-slider" style="background-position: 1350% 0%;">
+				
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+							 <div class="da-slide da-slide-toleft">
+								<h2>2022년 농촌진흥청 60주년, '과거-현재-미래를 ...</h2>
+								<p>농촌진흥청 60년, 기적을 일상으로 만들었고 이제 또 다른 기적을 써나가겠습니다.</p>
+								<a href="https://youtu.be/Bekp55IEZcg" class="da-link" target="_blank">자세히 보기</a>
+								<div class="da-img"><img src="./농촌진흥청_files/file1640031478445432473960th.jpg" alt="농촌진흥청 60년, 기적을 일상으로 만들었고 이제 또 다른 기적을 써나가겠습니다."></div>
+								<div class="da-img2"><img src="./농촌진흥청_files/file11747426080806533340young_banner.png" alt="image01"></div>
+							</div>
+							
+						  
+
+							 <div class="da-slide da-slide-toleft">
+								<h2>'똑똑! 청년농부' 시범서비스를 시작합니다!</h2>
+								<p>청년농업인 맞춤형 종합정보, 한자리서 찾아볼 수 있어</p>
+								<a href="https://www.rda.go.kr/young/" class="da-link" target="_blank">자세히 보기</a>
+								<div class="da-img"><img src="./농촌진흥청_files/file11747426080806533340young_banner.png" alt="청년농업인 맞춤형 종합 정보, 한자리서 찾아볼 수 있어"></div>
+								<div class="da-img2"><img src="./농촌진흥청_files/file1215402664126509953520211224_2022SNS.png" alt="image01"></div>
+							</div>
+							
+						  
+
+							 <div class="da-slide da-slide-toleft">
+								<h2>농촌진흥청 SNS 기자단 모집</h2>
+								<p>2022년 농촌진흥청 SNS 기자단을 모집합니다!</p>
+								<a href="https://blog.naver.com/rda2448/222602942937" class="da-link" target="_blank">자세히 보기</a>
+								<div class="da-img"><img src="./농촌진흥청_files/file1215402664126509953520211224_2022SNS.png" alt="2022년 농촌진흥청 SNS 기자단을 모집합니다!"></div>
+								<div class="da-img2"><img src="./농촌진흥청_files/file16385809864408730460file17454510078771244229cap001.jpg" alt="image01"></div>
+							</div>
+							
+						  
+
+							 <div class="da-slide da-slide-fromright da-slide-current">
+								<h2>일상 속 어려운 코로나19 용어, 쉬운 우리말로 사용...</h2>
+								<p>일상 속 어려운 코로나19 용어, 쉬운 우리말로 사용해요</p>
+								<a href="https://bit.ly/3cicQ8v" class="da-link" target="_blank">자세히 보기</a>
+								<div class="da-img"><img src="./농촌진흥청_files/file16385809864408730460file17454510078771244229cap001.jpg" alt="농촌진흥청 일상 속 어려운 코로나19 용어 쉬운 우리말로 순화해 주세요."></div>
+								<div class="da-img2"><img src="./농촌진흥청_files/file15589551267480851374file1693464246565704179020211104_research.jpg" alt="image01"></div>
+							</div>
+							
+						  
+
+							 <div class="da-slide">
+								<h2>국가연구개발 우수성과 100선 5건 선정</h2>
+								<p>농진청은 ‘2021 국가연구개발 우수성과 100선’에 농업과학기술 연구성과 5건이 선정됐다고 밝혔다</p>
+								<a href="https://www.rda.go.kr:2360/viewer/doc.html?fn=farmprmninfo1000007746060&amp;rs=/upload/board/farmprmninfo/result/202111/" class="da-link" target="_blank">자세히 보기</a>
+								<div class="da-img"><img src="./농촌진흥청_files/file15589551267480851374file1693464246565704179020211104_research.jpg" alt="농촌진흥청 2021 국가연구개발 우수성과 100선 5건 선정"></div>
+								<div class="da-img2"><img src="./농촌진흥청_files/file1640031478445432473960th.jpg" alt="image01"></div>
+							</div>
+							
+						  
+
+				
+				<nav class="da-arrows">
+					<button type="button" class="da-arrows-prev" title="이전"></button>
+					<button type="button" class="da-arrows-start" title="정지"></button><button class="da-arrows-stop" style="display:none" title="시작"></button>
+					<button type="button" class="da-arrows-next" title="다음"></button>
+				</nav>
+			<nav class="da-dots"><button class=""></button><button class=""></button><button class=""></button><button class="da-dots-current"></button><button></button></nav></div>
+			<!-- 비쥬얼 끝 -->
+			<!-- 비쥬얼 시작 -->
+			<div class="mvisual_sliderBox">
+				<div class="bx-wrapper" style="max-width: 100%;"><div class="bx-viewport" aria-live="polite" style="width: 100%; overflow: hidden; position: relative; height: 0px;"><ul id="mvisual_Slide" class="mv_slide" style="width: 5215%; position: relative; transition-duration: 0.5s; transform: translate3d(0px, 0px, 0px);"><li style="float: left; list-style: none; position: relative;" class="bx-clone" aria-hidden="true">
+								<div class="con_box">
+									<div class="title_wrap">
+										<h2 class="skip">국가연구개발 우수성과 100선 5건 선정</h2>
+										<p>농진청은 ‘2021 국가연구개발 우수성과 100선’에 농업과학기술 연구성과 5건이 선정됐다고 밝혔다</p>
+									</div>
+									<ul class="mvisual_img">     
+										<li class="to_img"><a href="https://www.rda.go.kr:2360/viewer/doc.html?fn=farmprmninfo1000007746060&amp;rs=/upload/board/farmprmninfo/result/202111/" target="_blank" tabindex="-1">
+										<img src="./농촌진흥청_files/file15589551267480851374file1693464246565704179020211104_research.jpg" alt="국가연구개발 우수성과 100선 5건 선정"></a></li>
+										<li class="next_img"><img src="./농촌진흥청_files/file1640031478445432473960th.jpg" alt="2022년 농촌진흥청 60주년, &#39;과거-현재-미래를 잇다&#39;"></li> 
+									</ul> 
+
+								</div>
+							</li><!-- id="mvisual_Slide"  spot_tab_2019 -->
+					
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+							 <li style="float: left; list-style: none; position: relative;" aria-hidden="true">
+								<div class="con_box">
+									<div class="title_wrap">
+										<h2 class="skip">2022년 농촌진흥청 60주년, '과거-현재-미래...</h2>
+										<p>농촌진흥청 60년, 기적을 일상으로 만들었고 이제 또 다른 기적을 써나가겠습니다.</p>
+									</div>
+									<ul class="mvisual_img">     
+										<li class="to_img"><a href="https://youtu.be/Bekp55IEZcg" target="_blank">
+										<img src="./농촌진흥청_files/file1640031478445432473960th.jpg" alt="2022년 농촌진흥청 60주년, &#39;과거-현재-미래를 잇다&#39;"></a></li>
+										<li class="next_img"><img src="./농촌진흥청_files/file11747426080806533340young_banner.png" alt="&#39;똑똑! 청년농부&#39; 시범서비스를 시작합니다!"></li> 
+									</ul> 
+
+								</div>
+							</li>
+															
+						  
+							 <li aria-hidden="false" style="float: left; list-style: none; position: relative;">
+								<div class="con_box">
+									<div class="title_wrap">
+										<h2 class="skip">'똑똑! 청년농부' 시범서비스를 시작합니다!</h2>
+										<p>청년농업인 맞춤형 종합정보, 한자리서 찾아볼 수 있어</p>
+									</div>
+									<ul class="mvisual_img">     
+										<li class="to_img"><a href="https://www.rda.go.kr/young/" target="_blank">
+										<img src="./농촌진흥청_files/file11747426080806533340young_banner.png" alt="&#39;똑똑! 청년농부&#39; 시범서비스를 시작합니다!"></a></li>
+										<li class="next_img"><img src="./농촌진흥청_files/file1215402664126509953520211224_2022SNS.png" alt="농촌진흥청 SNS 기자단 모집"></li> 
+									</ul> 
+
+								</div>
+							</li>
+															
+						  
+							 <li aria-hidden="true" style="float: left; list-style: none; position: relative;">
+								<div class="con_box">
+									<div class="title_wrap">
+										<h2 class="skip">농촌진흥청 SNS 기자단 모집</h2>
+										<p>2022년 농촌진흥청 SNS 기자단을 모집합니다!</p>
+									</div>
+									<ul class="mvisual_img">     
+										<li class="to_img"><a href="https://blog.naver.com/rda2448/222602942937" target="_blank">
+										<img src="./농촌진흥청_files/file1215402664126509953520211224_2022SNS.png" alt="농촌진흥청 SNS 기자단 모집"></a></li>
+										<li class="next_img"><img src="./농촌진흥청_files/file16385809864408730460file17454510078771244229cap001.jpg" alt="일상 속 어려운 코로나19 용어, 쉬운 우리말로 사용해요"></li> 
+									</ul> 
+
+								</div>
+							</li>
+															
+						  
+							 <li aria-hidden="true" style="float: left; list-style: none; position: relative;">
+								<div class="con_box">
+									<div class="title_wrap">
+										<h2 class="skip">일상 속 어려운 코로나19 용어, 쉬운 우리말로 ...</h2>
+										<p>일상 속 어려운 코로나19 용어, 쉬운 우리말로 사용해요</p>
+									</div>
+									<ul class="mvisual_img">     
+										<li class="to_img"><a href="https://bit.ly/3cicQ8v" target="_blank">
+										<img src="./농촌진흥청_files/file16385809864408730460file17454510078771244229cap001.jpg" alt="일상 속 어려운 코로나19 용어, 쉬운 우리말로 사용해요"></a></li>
+										<li class="next_img"><img src="./농촌진흥청_files/file15589551267480851374file1693464246565704179020211104_research.jpg" alt="국가연구개발 우수성과 100선 5건 선정"></li> 
+									</ul> 
+
+								</div>
+							</li>
+															
+						  
+							 <li style="float: left; list-style: none; position: relative;" aria-hidden="true">
+								<div class="con_box">
+									<div class="title_wrap">
+										<h2 class="skip">국가연구개발 우수성과 100선 5건 선정</h2>
+										<p>농진청은 ‘2021 국가연구개발 우수성과 100선’에 농업과학기술 연구성과 5건이 선정됐다고 밝혔다</p>
+									</div>
+									<ul class="mvisual_img">     
+										<li class="to_img"><a href="https://www.rda.go.kr:2360/viewer/doc.html?fn=farmprmninfo1000007746060&amp;rs=/upload/board/farmprmninfo/result/202111/" target="_blank">
+										<img src="./농촌진흥청_files/file15589551267480851374file1693464246565704179020211104_research.jpg" alt="국가연구개발 우수성과 100선 5건 선정"></a></li>
+										<li class="next_img"><img src="./농촌진흥청_files/file1640031478445432473960th.jpg" alt="2022년 농촌진흥청 60주년, &#39;과거-현재-미래를 잇다&#39;"></li> 
+									</ul> 
+
+								</div>
+							</li>
+															
+						  
+
+				<li style="float: left; list-style: none; position: relative;" class="bx-clone" aria-hidden="true">
+								<div class="con_box">
+									<div class="title_wrap">
+										<h2 class="skip">2022년 농촌진흥청 60주년, '과거-현재-미래...</h2>
+										<p>농촌진흥청 60년, 기적을 일상으로 만들었고 이제 또 다른 기적을 써나가겠습니다.</p>
+									</div>
+									<ul class="mvisual_img">     
+										<li class="to_img"><a href="https://youtu.be/Bekp55IEZcg" target="_blank" tabindex="-1">
+										<img src="./농촌진흥청_files/file1640031478445432473960th.jpg" alt="2022년 농촌진흥청 60주년, &#39;과거-현재-미래를 잇다&#39;"></a></li>
+										<li class="next_img"><img src="./농촌진흥청_files/file11747426080806533340young_banner.png" alt="&#39;똑똑! 청년농부&#39; 시범서비스를 시작합니다!"></li> 
+									</ul> 
+
+								</div>
+							</li></ul></div><div class="bx-controls bx-has-controls-direction bx-has-controls-auto bx-has-pager"><div class="bx-controls-direction"><a class="bx-prev" href="https://www.rda.go.kr/main/mainPage.do"><span class="hide">이전</span></a><a class="bx-next" href="https://www.rda.go.kr/main/mainPage.do"><span class="hide">다음</span></a></div><div class="bx-controls-auto"><div class="bx-controls-auto-item"><a class="bx-start active" href="https://www.rda.go.kr/main/mainPage.do">Start</a></div><div class="bx-controls-auto-item"><a class="bx-stop" href="https://www.rda.go.kr/main/mainPage.do">Stop</a></div></div><div class="bx-pager bx-default-pager"><div class="bx-pager-item"><a href="https://www.rda.go.kr/main/mainPage.do" data-slide-index="0" class="bx-pager-link">1</a></div><div class="bx-pager-item"><a href="https://www.rda.go.kr/main/mainPage.do" data-slide-index="1" class="bx-pager-link active">2</a></div><div class="bx-pager-item"><a href="https://www.rda.go.kr/main/mainPage.do" data-slide-index="2" class="bx-pager-link">3</a></div><div class="bx-pager-item"><a href="https://www.rda.go.kr/main/mainPage.do" data-slide-index="3" class="bx-pager-link">4</a></div><div class="bx-pager-item"><a href="https://www.rda.go.kr/main/mainPage.do" data-slide-index="4" class="bx-pager-link">5</a></div></div></div></div>
+			</div>
+			<!-- 비쥬얼 끝 -->
+		</section>
+
+		<section class="main_Cont index01" id="content2">
+			<div class="inner">
+				<!-- <h2 class="index_title">농촌진흥청 <span>알리미</span></h2> -->
+
+				<!-- group_top -->
+				<div class="group_top">
+				<section class="rdanews_area">
+					<ul>
+
+                            <!-- 공지 -->
+							
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+								
+
+							<li>
+								<a href="javascript:void(0);" onclick="location.href=&#39;/board/board.do?mode=view&amp;prgId=nei_ancmttEntry&amp;dataNo=100000775943&#39;" title="2022년도 농촌진흥공무원 「지도공무원 역량개발교육」 과정 기획, 운영 희망기관 신청안내" class="notice_cont">
+									
+										<span class="notice_title">2022년도 농촌진흥공무원 「지도공무원 역량개발교육」 과정 기획, 운영 희망기관 신청안내</span>
+										<span class="data_con">
+											<em class="tit_A"></em>
+											<em class="data">2022-01-06</em>
+										</span>
+									
+
+								</a>
+                                
+							</li>
+					  
+
+								
+
+							<li>
+								<a href="javascript:void(0);" onclick="location.href=&#39;/board/board.do?mode=view&amp;prgId=nei_ancmttEntry&amp;dataNo=100000775970&#39;" title="유전체 정보기반「수요자 맞춤형 분자표지 개발 지원사업」참여 종자기업 모집 공고" class="notice_cont">
+									
+										<span class="notice_title">유전체 정보기반「수요자 맞춤형 분자표지 개발 지원사업」참여 종자기업 모집 공고</span>
+										<span class="data_con">
+											<em class="tit_A"></em>
+											<em class="data">2022-01-07</em>
+										</span>
+									
+
+								</a>
+                                
+							</li>
+					  
+
+
+
+                            <!-- 보도자료  -->
+							
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+												
+							<li>
+								<a href="javascript:void(0);" onclick="location.href=&#39;/board/board.do?mode=view&amp;prgId=day_farmprmninfoEntry&amp;dataNo=100000776179&#39;" title="맥류 품질·생산성, 겨울나기 후 포장·생육 관리에 달려" class="notice_cont">
+									<span class="notice_title">맥류 품질·생산성, 겨울나기 후 포장·생육 관리에 달려</span>
+									<span class="data_con">
+										<em class="tit_E"></em>
+										<em class="data">2022-01-17</em>
+									</span>
+								</a>
+                                
+								<div class="new_wrap"><i class="label-new"></i></div>
+                                
+							</li>
+
+						  
+
+
+
+                            <!-- 주요행사 -->
+							
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+								
+
+							<li>
+								<a href="javascript:void(0);" onclick="location.href=&#39;/board/board.do?mode=view&amp;prgId=nei_mainevntEntry&amp;dataNo=100000776167&#39;" title="농산물 잔류농약 분석성분 확대 대응 시군담당자 교육" class="notice_cont">
+									
+										<span class="notice_title">농산물 잔류농약 분석성분 확대 대응 시군담당자 교육</span>
+										<span class="data_con">
+											<em class="tit_B"></em>
+											<em class="data">2022-01-21</em>
+										</span>
+									
+
+								</a>
+                                
+							</li>
+					  
+
+
+	                        <!-- 채용정보 -->
+							
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+								
+
+							<li>
+								<a href="javascript:void(0);" onclick="location.href=&#39;/board/board.do?mode=view&amp;prgId=acp_adopancmEntry&amp;dataNo=100000775869&#39;" title="(공채) 2022년도 연구직공무원 공개경쟁채용시험 계획 공고 " class="notice_cont">
+									
+										<span class="notice_title">(공채) 2022년도 연구직공무원 공개경쟁채용시험 계획 공고 </span>
+										<span class="data_con">
+											<em class="tit_C"></em>
+											<em class="data">2022-01-03</em>
+										</span>
+									
+
+								</a>
+                                
+							</li>
+					  
+
+
+
+							<!-- 입찰정보 -->
+							
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+								
+
+							<li>
+								<a href="javascript:void(0);" onclick="location.href=&#39;/board/board.do?mode=view&amp;prgId=bid_bidancmEntry&amp;dataNo=100000775364&#39;" title="직원 출퇴근용 차량 운송용역 견적서 제출" class="notice_cont">
+									
+										<span class="notice_title">직원 출퇴근용 차량 운송용역 견적서 제출</span>
+										<span class="data_con">
+											<em class="tit_D"></em>
+											<em class="data">2021-12-06</em>
+										</span>
+									
+
+								</a>
+                                
+							</li>
+					  
+
+
+					</ul>
+				</section>
+
+				<section class="director_area">
+					<h3>열린청장실</h3>
+					<div class="director_slide">
+					<a class="more_list" href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=day_ppemoventEntry">전체보기</a>
+					<div class="bx-wrapper" style="max-width: 100%;"><div class="bx-viewport" aria-live="polite" style="width: 100%; overflow: hidden; position: relative; height: 230px;"><ul id="directorSlide" class="director_slide" style="width: 2215%; position: relative; transition-duration: 0s; transform: translate3d(-280px, 0px, 0px);"><li style="float: left; list-style: none; position: relative;" class="bx-clone" aria-hidden="true">  
+								<a href="https://www.rda.go.kr/board/board.do?mode=view&amp;prgId=day_ppemoventEntry&amp;dataNo=100000775728" tabindex="-1">
+									<div class="pimg">
+										<img src="./농촌진흥청_files/thumbnail9163461218504119275thum.jpg" alt="고창 연구시설, 영농현장 점검">
+										<dl class="pop_mask">
+											<dt>고창 연구시설, 영농현장 점검</dt>
+											<dd>박병홍 농촌진흥청장이 27일 전북 고창군농업기...</dd>
+										</dl>
+									</div>
+								</a>
+							</li>
+						
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	                         <li style="float: left; list-style: none; position: relative;" aria-hidden="false">
+								<a href="https://www.rda.go.kr/board/board.do?mode=view&amp;prgId=day_ppemoventEntry&amp;dataNo=100000776106">
+									<div class="pimg">
+									
+										<img src="./농촌진흥청_files/thumbnail7182662224524601565thum.jpg" alt="과수화상병 궤양제거 현장 연시회">
+									
+										<dl class="pop_mask">
+										   <dt>과수화상병 궤양제거 현장 연...</dt>
+										   <dd> 박병홍 농촌진흥청장이 11일 충남 ...</dd>
+										</dl>
+									</div>
+								</a>
+							</li>
+				
+                             <li style="float: left; list-style: none; position: relative;" aria-hidden="true">  
+								<a href="https://www.rda.go.kr/board/board.do?mode=view&amp;prgId=day_ppemoventEntry&amp;dataNo=100000775728">
+									<div class="pimg">
+										<img src="./농촌진흥청_files/thumbnail9163461218504119275thum.jpg" alt="고창 연구시설, 영농현장 점검">
+										<dl class="pop_mask">
+											<dt>고창 연구시설, 영농현장 점검</dt>
+											<dd>박병홍 농촌진흥청장이 27일 전북 고창군농업기...</dd>
+										</dl>
+									</div>
+								</a>
+							</li>
+					
+
+					<li style="float: left; list-style: none; position: relative;" class="bx-clone" aria-hidden="true">
+								<a href="https://www.rda.go.kr/board/board.do?mode=view&amp;prgId=day_ppemoventEntry&amp;dataNo=100000776106" tabindex="-1">
+									<div class="pimg">
+									
+										<img src="./농촌진흥청_files/thumbnail7182662224524601565thum.jpg" alt="과수화상병 궤양제거 현장 연시회">
+									
+										<dl class="pop_mask">
+										   <dt>과수화상병 궤양제거 현장 연...</dt>
+										   <dd> 박병홍 농촌진흥청장이 11일 충남 ...</dd>
+										</dl>
+									</div>
+								</a>
+							</li></ul></div><div class="bx-controls bx-has-controls-direction"><div class="bx-controls-direction"><a class="bx-prev" href="https://www.rda.go.kr/main/mainPage.do"><span class="hide">이전</span></a><a class="bx-next" href="https://www.rda.go.kr/main/mainPage.do"><span class="hide">다음</span></a></div></div></div>
+					</div>
+				</section>
+
+				<section class="noticepan_area">
+						<h3>알림판</h3>
+						<div class="bx-wrapper" style="max-width: 100%;"><div class="bx-viewport" aria-live="polite" style="width: 100%; overflow: hidden; position: relative; height: 198px;"><ul id="noticeSlide" class="notice_slide" style="width: 11215%; position: relative; transition-duration: 0.5s; transform: translate3d(-520px, 0px, 0px);"><li style="float: left; list-style: none; position: relative;" class="bx-clone" aria-hidden="true">
+			<span class="pic">
+			
+				<a href="javascript:void(0);" onclick="
+				
+					window.open(&#39;about:blank&#39;).location.href=&#39;https://bit.ly/37SJKdy&#39;" title="[새창열림] 찬우씨에게 보조금 24를 알려주세요 찾아주는 보조금 24" tabindex="-1">
+				
+					<img src="./농촌진흥청_files/file178669332896027827502021082311101899.jpg" alt="찬우씨에게 보조금 24를 알려주세요 찾아주는 보조금 24" class="banImage">
+				</a>
+			
+			</span> 
+		</li>       
+							<!-- edited by kjs 20161007 : 알림판-->
+							
+
+
+
+
+
+ 
+
+
+ 
+
+
+
+
+
+		<li style="float: left; list-style: none; position: relative;" aria-hidden="true">
+			<span class="pic">
+			
+				<a href="javascript:void(0);" onclick="
+				
+					window.open(&#39;about:blank&#39;).location.href=&#39;https://www.rda.go.kr/event/images/20211129_01.pdf&#39;" title="[새창열림] 겨울철 자연재해 대비 농작물 및 시설물 관리요령" tabindex="-1">
+				
+					<img src="./농촌진흥청_files/innerpop_20211129_01.jpg" alt="겨울철 자연재해 대비 농작물 및 시설물 관리요령" class="banImage">
+				</a>
+			
+			</span> 
+		</li>
+	
+		<li aria-hidden="false" style="float: left; list-style: none; position: relative;">
+			<span class="pic">
+			
+				<a href="javascript:void(0);" onclick="
+				
+					window.open(&#39;about:blank&#39;).location.href=&#39;http://atis.rda.go.kr&#39;" title="[새창열림] 2022년 농촌진흥청 농업과학기술 연구개발사업 신규과제2차 정기공모 2022년 1월 14일 금요일부터 2월 18일 금요일 18시까지" tabindex="0">
+				
+					<img src="./농촌진흥청_files/file150818494788393988512022011710092549.jpg" alt="2022년 농촌진흥청 농업과학기술 연구개발사업 신규과제2차 정기공모 2022년 1월 14일 금요일부터 2월 18일 금요일 18시까지" class="banImage">
+				</a>
+			
+			</span> 
+		</li>
+	
+		<li aria-hidden="true" style="float: left; list-style: none; position: relative;">
+			<span class="pic">
+			
+				<a href="javascript:void(0);" onclick="
+				
+					window.open(&#39;about:blank&#39;).location.href=&#39;https://gongchae.rda.go.kr&#39;" title="[새창열림] 2022년도 농촌진흥청 연구직공무원 공개경쟁채용시험계획 공고  접수기간 2022년 2월 14일부터 2월 18일 9시부터 21시까지" tabindex="-1">
+				
+					<img src="./농촌진흥청_files/file149140525637121176922022010317585482.jpg" alt="2022년도 농촌진흥청 연구직공무원 공개경쟁채용시험계획 공고  접수기간 2022년 2월 14일부터 2월 18일 9시부터 21시까지" class="banImage">
+				</a>
+			
+			</span> 
+		</li>
+	
+		<li aria-hidden="true" style="float: left; list-style: none; position: relative;">
+			<span class="pic">
+			
+				<a href="javascript:void(0);" onclick="
+				
+					window.open(&#39;about:blank&#39;).location.href=&#39;https://www.gojobs.go.kr/&#39;" title="[새창열림] 국립식량과학원 재배환경과장 개방형직위 공개모집 2022년 1월 18일 화요일 18시까지" tabindex="-1">
+				
+					<img src="./농촌진흥청_files/file18469223685258587644202201121318301.jpg" alt="국립식량과학원 재배환경과장 개방형직위 공개모집 2022년 1월 18일 화요일 18시까지" class="banImage">
+				</a>
+			
+			</span> 
+		</li>
+	
+		<li aria-hidden="true" style="float: left; list-style: none; position: relative;">
+			<span class="pic">
+			
+				<a href="javascript:void(0);" onclick="
+				
+					window.open(&#39;about:blank&#39;).location.href=&#39;https://www.rda.go.kr/board/board.do?boardId=mortal&amp;prgId=adm_mortalEntry&amp;menu_id=ofc&amp;currPage=1&amp;dataNo=100000775422&amp;mode=updateCnt&#39;" title="[새창열림] 국민인권위원회주관 2021 청렴도 측정 결과 공개 알림판" tabindex="-1">
+				
+					<img src="./농촌진흥청_files/file112475042285703366692021121013094282.jpg" alt="국민인권위원회주관 2021 청렴도 측정 결과 공개 알림판" class="banImage">
+				</a>
+			
+			</span> 
+		</li>
+	
+		<li aria-hidden="true" style="float: left; list-style: none; position: relative;">
+			<span class="pic">
+			
+				<a href="javascript:void(0);" onclick="
+				
+					window.open(&#39;about:blank&#39;).location.href=&#39;https://www.mybudget.go.kr/&#39;" title="[새창열림] 나의 빛나는 아이디어 국민생활 불편을 지금바로 제안하세요 국민참여예산 집중접수기간 1월 부터 2월" tabindex="-1">
+				
+					<img src="./농촌진흥청_files/file126349788870210435942022011710123720.jpg" alt="나의 빛나는 아이디어 국민생활 불편을 지금바로 제안하세요 국민참여예산 집중접수기간 1월 부터 2월" class="banImage">
+				</a>
+			
+			</span> 
+		</li>
+	
+		<li aria-hidden="true" style="float: left; list-style: none; position: relative;">
+			<span class="pic">
+			
+				<a href="javascript:void(0);" onclick="
+				
+					window.open(&#39;about:blank&#39;).location.href=&#39;https://www.rda.go.kr/young/&#39;" title="[새창열림] 똑똑 청년농부 성공적인 영농정착을 위한 청년농업인 종합정보제공 서비스" tabindex="-1">
+				
+					<img src="./농촌진흥청_files/file18372668984725002055202201031030378.png" alt="똑똑 청년농부 성공적인 영농정착을 위한 청년농업인 종합정보제공 서비스" class="banImage">
+				</a>
+			
+			</span> 
+		</li>
+	
+		<li aria-hidden="true" style="float: left; list-style: none; position: relative;">
+			<span class="pic">
+			
+				<a href="javascript:void(0);" onclick="
+				
+					window.open(&#39;about:blank&#39;).location.href=&#39;https://www.acrc.go.kr/acrc/cardNews/cardNews.do?command=searchDetailCardNews&amp;menuId=05050605&amp;cardNum=169&amp;currPageNo=1&#39;" title="[새창열림] 국민권익위원회 청탁금지법 친지이이숙과 나누는 선물은 제한하지 않습니다." tabindex="-1">
+				
+					<img src="./농촌진흥청_files/file160198135507131344852022011710145768.jpg" alt="국민권익위원회 청탁금지법 친지이이숙과 나누는 선물은 제한하지 않습니다." class="banImage">
+				</a>
+			
+			</span> 
+		</li>
+	
+		<li aria-hidden="true" style="float: left; list-style: none; position: relative;">
+			<span class="pic">
+			
+				<a href="javascript:void(0);" onclick="
+				
+					window.open(&#39;about:blank&#39;).location.href=&#39;https://www.aglook.kr/event&#39;" title="[새창열림] 농업전망 2022 온라인개최 2022년 1월 19일부터 1월 20일까지" tabindex="-1">
+				
+					<img src="./농촌진흥청_files/file117237756229584424932021122713170123.jpg" alt="농업전망 2022 온라인개최 2022년 1월 19일부터 1월 20일까지" class="banImage">
+				</a>
+			
+			</span> 
+		</li>
+	
+		<li aria-hidden="true" style="float: left; list-style: none; position: relative;">
+			<span class="pic">
+			
+				<a href="javascript:void(0);" onclick="
+				
+					window.open(&#39;about:blank&#39;).location.href=&#39;https://www.rda.go.kr/event/images/2021100801.pdf&#39;" title="[새창열림] 구제역 AI예방을 위해 소독/백신접종 차단방역 철저히! 특별방역대책기간:21.10.1~22.2.28" tabindex="-1">
+				
+					<img src="./농촌진흥청_files/innerpop_20211008_02.jpg" alt="구제역 AI예방을 위해 소독/백신접종 차단방역 철저히! 특별방역대책기간:21.10.1~22.2.28" class="banImage">
+				</a>
+			
+			</span> 
+		</li>
+	
+		<li style="float: left; list-style: none; position: relative;" aria-hidden="true">
+			<span class="pic">
+			
+				<a href="javascript:void(0);" onclick="
+				
+					window.open(&#39;about:blank&#39;).location.href=&#39;https://bit.ly/37SJKdy&#39;" title="[새창열림] 찬우씨에게 보조금 24를 알려주세요 찾아주는 보조금 24" tabindex="-1">
+				
+					<img src="./농촌진흥청_files/file178669332896027827502021082311101899.jpg" alt="찬우씨에게 보조금 24를 알려주세요 찾아주는 보조금 24" class="banImage">
+				</a>
+			
+			</span> 
+		</li>
+	
+
+
+
+							<!-- //edited by kjs 20161007 : 알림판-->
+						 <li style="float: left; list-style: none; position: relative;" class="bx-clone" aria-hidden="true">
+			<span class="pic">
+			
+				<a href="javascript:void(0);" onclick="
+				
+					window.open(&#39;about:blank&#39;).location.href=&#39;https://www.rda.go.kr/event/images/20211129_01.pdf&#39;" title="[새창열림] 겨울철 자연재해 대비 농작물 및 시설물 관리요령" tabindex="-1">
+				
+					<img src="./농촌진흥청_files/innerpop_20211129_01.jpg" alt="겨울철 자연재해 대비 농작물 및 시설물 관리요령" class="banImage">
+				</a>
+			
+			</span> 
+		</li></ul></div><div class="bx-controls bx-has-controls-direction bx-has-controls-auto bx-has-pager"><div class="bx-controls-direction"><a class="bx-prev" href="https://www.rda.go.kr/main/mainPage.do"><span class="hide">이전</span></a><a class="bx-next" href="https://www.rda.go.kr/main/mainPage.do"><span class="hide">다음</span></a></div><div class="bx-controls-auto"><div class="bx-controls-auto-item"><a class="bx-start active" href="https://www.rda.go.kr/main/mainPage.do">Start</a></div><div class="bx-controls-auto-item"><a class="bx-stop" href="https://www.rda.go.kr/main/mainPage.do">Stop</a></div></div><div class="bx-pager bx-default-pager">2 / 11</div></div></div>				 
+				</section>
+				</div>
+				<!-- //group_top -->
+			</div>
+
+		</section>
+
+		<section class="main_Cont index02" id="content3">
+			<div class="inner">
+				<!-- <h2 class="index_title">국민<span>소통</span></h2> -->
+
+				<div class="icCommun_area">
+					<ul>
+						<li class="ico1"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=idu_drctdiagEntry">청장과의 대화</a></li>
+						<li class="ico2"><a href="https://www.rda.go.kr/main/mainPage.do#" onclick="mailPopup();">최근소식 받기</a></li>
+						<li class="ico3"><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=min_cate1">국민의 소리</a></li>
+						<li class="ico4"><a href="https://www.rda.go.kr/main/mainPage.do#">농업기술상담 <span>1544-8572</span></a></li>
+					</ul>
+				</div>
+				<div class="sns_link_area">
+					
+					<div class="bx-wrapper" style="max-width: 1188px;"><div class="bx-viewport" aria-live="polite" style="width: 100%; overflow: hidden; position: relative; height: 284px;"><ul id="snsSlider" class="sns_slide" style="width: 4215%; position: relative; transition-duration: 0s; transform: translate3d(-1200px, 0px, 0px);"><li style="float: left; list-style: none; position: relative; width: 288px; margin-right: 12px;" class="bx-clone" aria-hidden="true">
+									<a href="https://youtu.be/Bekp55IEZcg?t=1" target="_blank" tabindex="-1">
+									<span><img src="./농촌진흥청_files/file13403200299581308465y1.jpg" alt="농촌진흥청 60주년, 과거-현재-미래..."></span></a>
+									<p class="youtube">
+									<em></em>
+										<strong>농촌진흥청 60주년, 과거-현재-미래...</strong>
+									</p>
+								</li><li style="float: left; list-style: none; position: relative; width: 288px; margin-right: 12px;" class="bx-clone" aria-hidden="true">
+									<a href="https://blog.naver.com/rda2448/222613629045" target="_blank" tabindex="-1">
+									<span><img src="./농촌진흥청_files/file19119042600153025169b1.png" alt="과수화상병 확실한 궤양제거로 함께 예..."></span></a>
+									<p class="blog">
+									<em></em>
+										<strong>과수화상병 확실한 궤양제거로 함께 예...</strong>
+									</p>
+								</li><li style="float: left; list-style: none; position: relative; width: 288px; margin-right: 12px;" class="bx-clone" aria-hidden="true">
+									<a href="https://www.facebook.com/rdakorea/posts/280298514132440" target="_blank" tabindex="-1">
+									<span><img src="./농촌진흥청_files/file16269261280418208067f1.png" alt="2022 농촌진흥청 SNS기자단 모집"></span></a>
+									<p class="face">
+									<em></em>
+										<strong>2022 농촌진흥청 SNS기자단 모집</strong>
+									</p>
+								</li><li style="float: left; list-style: none; position: relative; width: 288px; margin-right: 12px;" class="bx-clone" aria-hidden="true">
+									<a href="https://youtu.be/Hej6bsI1xdk" target="_blank" tabindex="-1">
+									<span><img src="./농촌진흥청_files/file15294866423529793094y1.jpg" alt="탄소중립 실현 | 아시아 토양유기탄소..."></span></a>
+									<p class="youtube">
+									<em></em>
+										<strong>탄소중립 실현 | 아시아 토양유기탄소...</strong>
+									</p>
+								</li>
+						
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+								<li style="float: left; list-style: none; position: relative; width: 288px; margin-right: 12px;" aria-hidden="false">
+									<a href="https://youtu.be/Bekp55IEZcg?t=1" target="_blank">
+									<span><img src="./농촌진흥청_files/file13403200299581308465y1.jpg" alt="농촌진흥청 60주년, 과거-현재-미래..."></span></a>
+									<p class="youtube">
+									<em></em>
+										<strong>농촌진흥청 60주년, 과거-현재-미래...</strong>
+									</p>
+								</li>										
+							  
+								<li style="float: left; list-style: none; position: relative; width: 288px; margin-right: 12px;" aria-hidden="false">
+									<a href="https://blog.naver.com/rda2448/222613629045" target="_blank">
+									<span><img src="./농촌진흥청_files/file19119042600153025169b1.png" alt="과수화상병 확실한 궤양제거로 함께 예..."></span></a>
+									<p class="blog">
+									<em></em>
+										<strong>과수화상병 확실한 궤양제거로 함께 예...</strong>
+									</p>
+								</li>										
+							  
+								<li style="float: left; list-style: none; position: relative; width: 288px; margin-right: 12px;" aria-hidden="false">
+									<a href="https://www.facebook.com/rdakorea/posts/280298514132440" target="_blank">
+									<span><img src="./농촌진흥청_files/file16269261280418208067f1.png" alt="2022 농촌진흥청 SNS기자단 모집"></span></a>
+									<p class="face">
+									<em></em>
+										<strong>2022 농촌진흥청 SNS기자단 모집</strong>
+									</p>
+								</li>										
+							  
+								<li style="float: left; list-style: none; position: relative; width: 288px; margin-right: 12px;" aria-hidden="false">
+									<a href="https://youtu.be/Hej6bsI1xdk" target="_blank">
+									<span><img src="./농촌진흥청_files/file15294866423529793094y1.jpg" alt="탄소중립 실현 | 아시아 토양유기탄소..."></span></a>
+									<p class="youtube">
+									<em></em>
+										<strong>탄소중립 실현 | 아시아 토양유기탄소...</strong>
+									</p>
+								</li>										
+							  
+
+					<li style="float: left; list-style: none; position: relative; width: 288px; margin-right: 12px;" class="bx-clone" aria-hidden="true">
+									<a href="https://youtu.be/Bekp55IEZcg?t=1" target="_blank" tabindex="-1">
+									<span><img src="./농촌진흥청_files/file13403200299581308465y1.jpg" alt="농촌진흥청 60주년, 과거-현재-미래..."></span></a>
+									<p class="youtube">
+									<em></em>
+										<strong>농촌진흥청 60주년, 과거-현재-미래...</strong>
+									</p>
+								</li><li style="float: left; list-style: none; position: relative; width: 288px; margin-right: 12px;" class="bx-clone" aria-hidden="true">
+									<a href="https://blog.naver.com/rda2448/222613629045" target="_blank" tabindex="-1">
+									<span><img src="./농촌진흥청_files/file19119042600153025169b1.png" alt="과수화상병 확실한 궤양제거로 함께 예..."></span></a>
+									<p class="blog">
+									<em></em>
+										<strong>과수화상병 확실한 궤양제거로 함께 예...</strong>
+									</p>
+								</li><li style="float: left; list-style: none; position: relative; width: 288px; margin-right: 12px;" class="bx-clone" aria-hidden="true">
+									<a href="https://www.facebook.com/rdakorea/posts/280298514132440" target="_blank" tabindex="-1">
+									<span><img src="./농촌진흥청_files/file16269261280418208067f1.png" alt="2022 농촌진흥청 SNS기자단 모집"></span></a>
+									<p class="face">
+									<em></em>
+										<strong>2022 농촌진흥청 SNS기자단 모집</strong>
+									</p>
+								</li><li style="float: left; list-style: none; position: relative; width: 288px; margin-right: 12px;" class="bx-clone" aria-hidden="true">
+									<a href="https://youtu.be/Hej6bsI1xdk" target="_blank" tabindex="-1">
+									<span><img src="./농촌진흥청_files/file15294866423529793094y1.jpg" alt="탄소중립 실현 | 아시아 토양유기탄소..."></span></a>
+									<p class="youtube">
+									<em></em>
+										<strong>탄소중립 실현 | 아시아 토양유기탄소...</strong>
+									</p>
+								</li></ul></div><div class="bx-controls bx-has-controls-direction bx-has-pager"><div class="bx-controls-direction"><a class="bx-prev" href="https://www.rda.go.kr/main/mainPage.do"><span>이전</span></a><a class="bx-next" href="https://www.rda.go.kr/main/mainPage.do"><span>다음</span></a></div><div class="bx-pager bx-default-pager"><div class="bx-pager-item"><a href="https://www.rda.go.kr/main/mainPage.do" data-slide-index="0" class="bx-pager-link active">1</a></div><div class="bx-pager-item"><a href="https://www.rda.go.kr/main/mainPage.do" data-slide-index="1" class="bx-pager-link">2</a></div><div class="bx-pager-item"><a href="https://www.rda.go.kr/main/mainPage.do" data-slide-index="2" class="bx-pager-link">3</a></div><div class="bx-pager-item"><a href="https://www.rda.go.kr/main/mainPage.do" data-slide-index="3" class="bx-pager-link">4</a></div></div></div></div>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="main_Cont index03" id="content4">
+			<!-- <h2 class="index_title">농촌진흥청 <span>주요사이트</span></h2> -->
+
+			<!-- mobile /주요사이트 -->
+			<div class="site-container">
+				<div class="inner">
+					<ul>
+						<li class="ic1"><a href="http://www.nongsaro.go.kr/" title="[새창]농업기술포탈농사로" target="_blank" class="webStieBa"><span>농업기술</span></a></li>
+						<li class="ic2"><a href="http://atis.rda.go.kr/" title="[새창]종합관리시스템 ATIS" target="_blank" class="webStieBa"><span>ATIS</span></a></li>
+						<li class="ic3"><a href="http://lib.rda.go.kr/" title="[새창]농업과학도서관" target="_blank" class="webStieBa"><span>농업과학도서관</span></a></li>
+						<li class="ic4"><a href="https://www.rda.go.kr/aehBoard/aeh_main.do?prgId=aeh_main&amp;tab=01" target="_blank" title="[새창]사이버농업과학관" class="webStieBa"><span>사이버농업과학관</span></a></li>
+						<li class="ic5"><a href="https://www.rda.go.kr/children" title="[새창]어린이홈페이지" target="_blank" class="webStieBa"><span>어린이홈페이지</span></a></li>
+						<li class="ic6"><a href="http://hrd.rda.go.kr/" title="[새창]농촌인적자원개발센터" target="_blank" class="webStieBa"><span>농촌인적자원개발센터</span></a></li>
+						<li class="ic7"><a href="https://www.rda.go.kr/kaesa" target="_blank" title="[새창]전문지도연구회" class="webStieBa"><span>전문지도연구회</span></a></li>
+					</ul>
+				</div>
+			</div>
+
+           <!-- pc /주요사이트 -->
+			<div class="wsite-container">
+				<ul>
+					<li class="active">
+						<button type="button" class="wsite-page ico01">농업기술</button>
+						<div class="wsite-hrsub">
+							<div class="wsite-slide">
+								<p class="boxText">
+									<span class="webStieName">농업기술포털 <strong>농사로</strong><em></em></span>
+									<span class="webStieText">각종 농업기술 콘텐츠를 통합하여 제공하는 <br>국가대표 농업기술포털 서비스입니다.</span>
+									<a href="http://www.nongsaro.go.kr/" target="_blank" title="[새창]농업기술포탈농사로" class="webStieBa">바로가기</a>
+								</p>
+							</div>
+						</div><!-- /wsite-hrsub -->
+					</li>
+					<li>
+						<button type="button" class="wsite-page ico02">ATIS</button>
+						<div class="wsite-hrsub">
+							<div class="wsite-slide">
+								<p class="boxText">
+									<span class="webStieName">종합관리시스템<strong>ATIS</strong><em></em></span>
+									<span class="webStieText">농업R&amp;D 과제성과 통합관리, 농촌지도사업관리, 직무성과계약 및 근무성적평가관리, 학술활동 관리, 지방농업R&amp;D 통합관리 등에 활용된다.</span>
+									<a href="http://atis.rda.go.kr/" target="_blank" title="[새창]종합관리시스템 ATIS" class="webStieBa">바로가기</a>
+								</p>
+							</div>
+						</div><!-- /wsite-hrsub -->
+					</li>
+					<li>
+						<button type="button" class="wsite-page ico03">농업과학도서관</button>
+						<div class="wsite-hrsub">
+							<div class="wsite-slide">
+								<p class="boxText">
+									<span class="webStieName">농업과학<strong>도서관</strong><em></em></span>
+									<span class="webStieText">국내외에서 발간된 농업관련 문헌정보 수집 및 DB구축하여 대국민 서비스 제공</span>
+									<a href="http://lib.rda.go.kr/" target="_blank" title="[새창]농업과학도서관" class="webStieBa">바로가기</a>
+								</p>
+							</div>
+						</div><!-- /wsite-hrsub -->
+					</li>
+					<li>
+						<button type="button" class="wsite-page ico04">사이버농업과학관</button>
+						<div class="wsite-hrsub">
+							<div class="wsite-slide">
+								<p class="boxText">
+									<span class="webStieName">사이버농업<strong>과학관</strong><em></em></span>
+									<span class="webStieText">생명과 미래를 담은 농업과학이 만들어가는 세상 <br>농업의 과거·현재·미래를 살펴볼 수 있도록 기획</span>
+									<a href="https://www.rda.go.kr/aehBoard/aeh_main.do?prgId=aeh_main&amp;tab=01" title="[새창]사이버농업과학관" target="_blank" class="webStieBa">바로가기</a>
+								</p>
+							</div>
+						</div><!-- /wsite-hrsub -->
+					</li>
+					<li>
+						<button type="button" class="wsite-page ico05">어린이홈페이지</button>
+						<div class="wsite-hrsub">
+							<div class="wsite-slide">
+								<p class="boxText">
+									<span class="webStieName"><strong>어린이</strong>홈페이지<em></em></span>
+									<span class="webStieText">곤충마을, 작물여행, 농업동산, 놀이터 등 농업정보를<br>아이들에게 알기쉽게 제공</span>
+									<a href="https://www.rda.go.kr/children" target="_blank" title="[새창]어린이홈페이지" class="webStieBa">바로가기</a>
+								</p>
+							</div>
+						</div><!-- /wsite-hrsub -->
+					</li>
+					<li>
+						<button type="button" class="wsite-page ico06">농촌인적자원개발센터</button>
+						<div class="wsite-hrsub">
+							<div class="wsite-slide">
+								<p class="boxText">
+									<span class="webStieName"><strong>농촌인적</strong>자원개발센터<em></em></span>
+									<span class="webStieText">농업·농촌의 미래를 선도하는 교육품질 최고 전문교육기관</span>
+									<a href="http://hrd.rda.go.kr/" target="_blank" title="[새창]농촌인적 자원개발센터" class="webStieBa">바로가기</a>
+								</p>
+							</div>
+						</div><!-- /wsite-hrsub -->
+					</li>
+					<li>
+						<button type="button" class="wsite-page ico07">전문지도연구회</button>
+						<div class="wsite-hrsub">
+							<div class="wsite-slide">
+								<p class="boxText">
+									<span class="webStieName"><strong>전문지도</strong>연구회<em></em></span>
+									<span class="webStieText">농촌지도사업 활력화의 주역으로 한국농업 발전에 기여</span>
+									<a href="https://www.rda.go.kr/kaesa" target="_blank" title="[새창]농업전문정보서비스" class="webStieBa">바로가기</a>
+								</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!-- //pc /주요사이트 -->	
+			
+			 <script>
+			   $('.wsite-page').on("click",function(){					
+					$("html, body").animate({scrollTop:$(this).offset().top - 120}, 100);
+				});
+			 </script>	
+
+		</section>
+
+	</main>
+	<!-- //main_container -->
+
+
+	</div>
+
+
+	<!-- //container -->
+	
+	<!-- footer -->
+	
+			
+
+
+
+
+
+
+	
+
+	
+
+	<!-- footer -->
+	<footer id="footer">
+
+		<div class="ft_top">
+			<div class="inner">
+				<ul class="sitelink">
+					<li>
+						<button type="button">소속기관</button>
+						<dl class="list">
+							<dt class="bold">소속기관 사이트</dt>
+							<dd><a href="http://www.naas.go.kr/" target="_blank" title="[새창]국립농업과학원">국립농업과학원</a></dd>
+							<dd><a href="http://www.nics.go.kr/" target="_blank" title="[새창]국립식량과학원">국립식량과학원</a></dd>
+							<dd><a href="http://hrd.rda.go.kr/" target="_blank" title="[새창]농촌인적자원개발센터">농촌인적자원개발센터</a></dd>
+							<dd><a href="http://www.nihhs.go.kr/" target="_blank" title="[새창]국립원예특작과학원">국립원예특작과학원</a></dd>
+							<dd><a href="http://www.nias.go.kr/" target="_blank" title="[새창]국립축산과학원">국립축산과학원</a></dd>
+							<dd><a href="http://www.efact.or.kr/" target="_blank" title="[새창]농업기술실용화재단">농업기술실용화재단</a></dd>
+						</dl>
+					</li>
+
+				
+				<li>
+						<button type="button">지방농촌진흥기관</button>
+						<dl class="list">
+							<dt class="bold">지방농촌진흥기관</dt>
+							<dd><a href="https://www.rda.go.kr/localOrgAllView.do" title="[새창]">지방농촌진흥기관 전체보기</a></dd>
+							<dt class="mt5">- 농업기술원 -</dt>
+							<dd><a href="http://www.nongup.gyeonggi.kr/" target="_blank" title="[새창]">경기도</a></dd>
+							<dd><a href="http://www.ares.gangwon.kr/" target="_blank" title="[새창]">강원도</a></dd>
+							<dd><a href="http://www.ares.chungbuk.kr/" target="_blank" title="[새창]">충청북도</a></dd>
+							<dd><a href="http://cnnongup.chungnam.go.kr/" target="_blank" title="[새창]">충청남도</a></dd>
+							<dd><a href="http://www.jbares.go.kr/" target="_blank" title="[새창]">전라북도</a></dd>
+							<dd><a href="http://www.jares.go.kr/" target="_blank" title="[새창]">전라남도</a></dd>
+							<dd><a href="http://www.gba.go.kr/" target="_blank" title="[새창]">경상북도</a></dd>
+							<dd><a href="http://www.gnares.go.kr/" target="_blank" title="[새창]">경상남도</a></dd>
+							<dd><a href="http://agri.jeju.go.kr/" target="_blank" title="[새창]">제주특별자치도</a></dd>
+							<dt class="mt5">- 농업기술센터 -</dt>
+							<dd><a href="http://agro.seoul.go.kr/" target="_blank" title="[새창]">서울특별시</a></dd>
+							<dd><a href="http://www.busan.go.kr/nongup" target="_blank" title="[새창]">부산광역시</a></dd>
+							<dd><a href="http://www.daegu.go.kr/Rural/" target="_blank" title="[새창]">대구광역시</a></dd>
+							<dd><a href="http://agro.incheon.go.kr/" target="_blank" title="[새창]">인천광역시</a></dd>
+							<dd><a href="https://www.gwangju.go.kr/agri/" target="_blank" title="[새창]">광주광역시</a></dd>
+							<dd><a href="https://www.daejeon.go.kr/far/index.do" target="_blank" title="[새창]">대전광역시</a></dd>
+							<dd><a href="http://www.ulsan.go.kr/atc/index" target="_blank" title="[새창]">울산광역시</a></dd>
+							<dd><a href="http://www.sejong.go.kr/adtc.do" target="_blank" title="[새창]">세종특별자치시</a></dd>
+						</dl>
+					</li>
+
+					<li>
+						<button type="button">국제협력기관</button>
+						<dl class="list">
+							<dt class="bold">국제협력기관 사이트</dt>
+							<dd><a href="https://www.afaci.org:2361/" target="_blank" title="[새창]AFACI">AFACI (아시아 농식품 기술협력 협의체)</a></dd>
+							<dd><a href="https://www.kafaci.org:2363/" target="_blank" title="[새창]KAFACI">KAFACI (한·아프리카 농식품 기술협력 협의체)</a></dd>
+							<dd><a href="https://www.kolfaci.org:2362/" target="_blank" title="[새창]KoLFACI">KoLFACI (한·중남미 농식품 기술협력 협의체)</a></dd>
+							<dt class="mt5">- 국제 농업 연구 기관 -</dt>
+							<dd><a href="http://www.ars.usda.gov/" target="_blank" title="[새창]">미국농업연구소</a></dd>
+							<dd><a href="http://www.nsrrc.missouri.edu/" target="_blank" title="[새창]">복제돼지연구센터</a></dd>
+							<dd><a href="http://www.ttu.edu/" target="_blank" title="[새창]">텍사스테크대학교</a></dd>
+							<dd><a href="http://www.osu.edu/" target="_blank" title="[새창]">오하이오주립대학교</a></dd>
+							<dd><a href="http://www.caas.cn/en/" target="_blank" title="[새창]">중국농업과학원</a></dd>
+							<dd><a href="http://www.qau.edu.cn/" target="_blank" title="[새창]">칭다오농업대학</a></dd>
+							<dd><a href="http://www.ybu.edu.cn/" target="_blank" title="[새창]">연변대학</a></dd>
+							<dd><a href="http://www.naro.affrc.go.jp/english" target="_blank" title="[새창]">농업식품산업기술종합연구기구</a></dd>
+							<dd><a href="http://www.tari.gov.tw/english/" target="_blank" title="[새창]">대만농업연구소</a></dd>
+							<dd><a href="http://www.pcaf.da.gov.ph/" target="_blank" title="[새창]">필리핀 농업 협회</a></dd>
+							<dd><a href="http://www.pcaarrd.dost.gov.ph/" target="_blank" title="[새창]">필리핀 농림수산자연자원연구개발위원회</a></dd>
+							<dd><a href="http://www.wur.nl/en" target="_blank" title="[새창]">와게닝헨대학연구센터</a></dd>
+							<dd><a href="http://www.unipd.it/en" target="_blank" title="[새창]">파도바대학교</a></dd>
+							<dd><a href="http://www.unimi.it/en" target="_blank" title="[새창]">밀라노대학교</a></dd>
+							<dd><a href="http://www.slu.se/en" target="_blank" title="[새창]">스웨덴 농업과학대학교</a></dd>
+							<dd><a href="https://arastirma.tarimorman.gov.tr/bahridagdas/Sayfalar/EN/AnaSayfa.aspx" target="_blank" title="[새창]">터키 국제농업연구소</a></dd>
+							<dd><a href="http://www.gaas.dsl.ge/en" target="_blank" title="[새창]">조지아 농과원</a></dd>
+							<dd><a href="http://www.csiro.au/" target="_blank" title="[새창]">연방 과학산업 연구기구</a></dd>
+							<dd><a href="http://www.plantandfood.co.nz/" target="_blank" title="[새창]">식물&amp;음식 연구소</a></dd>
+							<dd><a href="http://www.kalro.org/" target="_blank" title="[새창]">케냐 농축산연구청</a></dd>
+							<dt class="mt5">- 국제 농업 기구 -</dt>
+							<dd><a href="http://www.ifpri.org/" target="_blank" title="[새창]">국제식량정책연구소</a></dd>
+							<dd><a href="http://www.avrdc.org/" target="_blank" title="[새창]">세계채소센터</a></dd>
+							<dd><a href="http://www.fftc.org/" target="_blank" title="[새창]">아시아/태평양 식량비료기술센터</a></dd>
+							<dd><a href="http://www.irri.org/" target="_blank" title="[새창]">국제미작연구소</a></dd>
+							<dd><a href="http://www.bioversityinternational.org/" target="_blank" title="[새창]">국제생물다양성연구소</a></dd>
+							<dd><a href="http://www.fao.org/" target="_blank" title="[새창]">유엔식량농업기구</a></dd>
+							<dd><a href="http://www.ilri.org/" target="_blank" title="[새창]">국제축산연구소</a></dd>
+							<dd><a href="http://www.catie.ac.cr/" target="_blank" title="[새창]">국제열대농업연구교육센터</a></dd>
+							<dd><a href="http://www.cimmyt.org/" target="_blank" title="[새창]">국제옥수수밀연구소</a></dd>
+							<dd><a href="http://www.icrisat.org/" target="_blank" title="[새창]">국제반건조열대작물연구소</a></dd>
+							<dd><a href="http://www.ifoam.bio/" target="_blank" title="[새창]">국제유기농연맹</a></dd>
+							<dd><a href="http://www.cipotato.org/" target="_blank" title="[새창]">국제감자연구소</a></dd>
+							<dd><a href="http://www.oecd.org/" target="_blank" title="[새창]">경제협력개발기구</a></dd>
+							<dd><a href="http://www.cgiar.org/" target="_blank" title="[새창]">국제농업연구자문기구</a></dd>
+							<dd><a href="http://www.ec.europa.eu/food/ref-labs_en" target="_blank" title="[새창]">유럽표준연구소</a></dd>
+						</dl>
+					</li>
+					<li>
+						<button type="button">유관기관</button>
+						<dl class="list">
+							<dt class="bold">유관기관 사이트</dt>
+							<dd><a href="http://www.gov.kr/portal/orgInfo" target="_blank" title="[새창]정부 조직도(정부24)">정부 조직도(정부24)</a></dd>
+							<dd><a href="http://www.mafra.go.kr/" target="_blank" title="[새창]농림축산식품부">농림축산식품부</a></dd>
+							<dd><a href="http://www.forest.go.kr/" target="_blank" title="[새창]산림청">산림청</a></dd>
+							<dd><a href="https://www.af.ac.kr/" target="_blank" title="[새창]국립한국농수산대학">국립한국농수산대학</a></dd>
+							<dd><a href="http://www.naqs.go.kr/" target="_blank" title="[새창]국립농산물품질관리원">국립농산물품질관리원</a></dd>
+							<dd><a href="http://www.seed.go.kr/" target="_blank" title="[새창]국립종자원">국립종자원</a></dd>
+							<dd><a href="http://www.at.or.kr/" target="_blank" title="[새창]한국농수산식품유통공사">한국농수산식품유통공사</a></dd>
+							<dd><a href="http://www.rda.go.kr/njh/" target="_blank" title="[새창]사단법인 농진중앙회">사단법인 농진중앙회</a></dd>
+							<dd><a href="http://www.epis.or.kr/" target="_blank" title="[새창]농림수산식품교육문화정보원">농림수산식품교육문화정보원</a></dd>
+						</dl>
+					</li>
+
+					<li>
+						<button type="button">배너모음</button>
+						<dl class="list">
+							<dt class="bold">배너모음 바로가기</dt>
+							<dd><a href="https://www.rda.go.kr/bannerInfo.do?banner_gubun=1">- 농업분야 -</a></dd>
+							<dd><a href="https://www.rda.go.kr/bannerInfo.do?banner_gubun=2">- 행정분야 -</a></dd>
+							<dd><a href="https://www.rda.go.kr/bannerInfo.do?banner_gubun=3">- 홍보 및 기타 -</a></dd>
+						</dl>
+					</li>
+	
+				</ul>
+			</div>
+		
+		</div>
+		<div class="ft_bot">
+			<div class="inner">
+				<nav>
+					<ul class="ft_link">
+						<li><a href="https://www.rda.go.kr/board/board.do?mode=html&amp;prgId=sea_suwonictyQuery">찾아오시는길</a></li>
+						<li><a href="https://www.rda.go.kr/infouseguid.do">홈페이지이용안내</a></li>
+						<li><a href="https://www.rda.go.kr/board/board.do?mode=list&amp;prgId=rep_hompicvnEntry">홈페이지 불편신고</a></li>
+						<li><a class="privacy" href="https://www.rda.go.kr/psninfoprot.do">개인정보처리방침</a></li>
+						<li><a href="https://www.rda.go.kr/viewerpgm.do">뷰어다운로드</a></li>
+						<li><a class="privacy" href="http://www.rda.go.kr/rc/" target="_blank" title="[새창]원격지원">원격지원</a></li>
+						<li><a href="http://www.kogl.or.kr/" target="_blank" title="[새창]OPEN 공공누리"><img src="./농촌진흥청_files/logo_open.png" alt="OPEN 공공누리"></a></li>
+						<li><a href="http://www.webwatch.or.kr/Situation/WA_Situation.html?MenuCD=110" target="_blank" title="국가 공인 인증기관 : 웹와치">
+						<img src="./농촌진흥청_files/waMark.png" alt="과학기술정보통신부 WEB ACCESSIBILITY 마크(웹 접근성 품질인증 마크)" title="웹 접근성 품질인증 (제 WAQC-201346호 )"></a></li>
+					</ul>
+					<ul class="rda_sns">
+						<li><a href="http://twitter.com/love_rda" target="_blank" title="[새창]농촌진흥청 트위터" class="sns_t">twitter</a></li>
+						<li><a href="http://www.facebook.com/rdakorea/" target="_blank" title="[새창농촌진흥청 페이스북" class="sns_f">facebook</a></li>
+						<li><a href="https://blog.naver.com/rda2448" target="_blank" title="[새창]농촌진흥청 네이버 블로그" class="sns_b">blog</a></li>
+						<li><a href="https://www.youtube.com/channel/UCLUJsGYtuS2vRovTGqSCbbw" target="_blank" title="[새창]농촌진흥청 유튜브" class="sns_y">youtube</a></li>
+						<li><a href="https://story.kakao.com/ch/rda" target="_blank" title="[새창]농촌진흥청 카카오스토리" class="sns_k">카카오스토리</a></li>
+					</ul>
+				</nav>
+				<div class="ft_info">
+					<address>
+						<span>54875 전라북도 전주시 덕진구 농생명로 300</span>
+						<span>대표전화 063-238-1000 (월~금 9:00~18:00, 공휴일 제외, 야간 0005~7)</span>
+						<span>팩스 063-238-1766 (야간1785)</span>
+						<span>이메일<a href="https://www.rda.go.kr/main/mainPage.do#footer_menu1" onclick="javascript:goMail();" title="[새창열림]대표e-mail 보내기"><img src="./농촌진흥청_files/ico_mail.png" alt="메일보내기"></a></span>
+					</address>
+
+					<p class="copyright">COPYRIGHT ⓒ 2019 RURAL DEVELOPMENT ADMINISTRATION. ALL RIGHTS RESERVED</p>
+				</div>
+				<div class="ft_tel"><em>농업기술상담</em>1544-8572</div>
+			</div>
+		</div>
+
+		<button type="button" id="cntTop" class="btn_top" style="position: fixed; display: block;"><img src="./농촌진흥청_files/top_btn.png" alt="top" title="맨 위로"></button>
+	<script type="text/javascript">
+	//<![CDATA[
+
+		function fn_downloadX(vName, sName, uPath) {
+				vName = encodeURI(vName);
+				sName = encodeURI(sName);
+
+				var url = "/fileDownLoad.do?viewFileName="+vName+"&serverFileName="+sName+"&uploadPath="+uPath;
+				
+				window.open(url,"filedownload");
+		}
+
+		
+		function fnc_download(fileNo) {
+			var url = "/fileDownLoadDwC.do?fileNo="+fileNo;
+			location.href=url;
+		}
+		
+		
+		function fn_download(boardId, dataNo,sortNo) {
+				
+				//var url = "/fileDownLoad.do?viewFileName="+vName+"&serverFileName="+sName+"&uploadPath="+uPath;
+				var url = "/fileDownLoadDw.do?boardId="+boardId+"&dataNo="+dataNo+"&sortNo="+sortNo;
+				location.href=url;
+				
+		}
+		
+		/* edited by kjs 20160816 : 파일바로보기 추가 */
+		function fn_view(boardId, dataNo,sortNo) {
+			
+			var url = "/fileViewDw.do?boardId="+boardId+"&dataNo="+dataNo+"&sortNo="+sortNo;
+			window.open(url, "_blank");
+			
+		}
+		/*// edited by kjs 20160816 : 파일바로보기 추가 */
+
+		function goLink(i) {
+			val = $("#goLinkSrc"+i).val();
+			if(val == ""){
+				alert("이동하려는 관련기관을 선택후 다시 시도해 주시기 바랍니다.");
+			} else {
+				window.open(val, "", "");
+			}
+		}	
+
+		function goMail(){
+			var url = "/etc/mailCommWrite.do";
+			window.open(url,'',"width=690,height=700");
+		}
+
+	//]]>
+	</script>	
+	
+
+
+
+	
+	
+	<!-- AceCounter Log Gathering Script V.7.5.2013010701 -->
+	<script type="text/javascript">
+	//<![CDATA[
+		var _AceGID=(function(){var Inf=['gtb4.acecounter.com','8080','AI2A34323135923','AW','0','NaPm,Ncisy','ALL','0']; var _CI=(!_AceGID)?[]:_AceGID.val;var _N=0;var _T=new Image(0,0);if(_CI.join('.').indexOf(Inf[3])<0){ _T.src =( location.protocol=="https:"?"https://"+Inf[0]:"http://"+Inf[0]+":"+Inf[1]) +'/?cookie'; _CI.push(Inf);  _N=_CI.length; } return {o: _N,val:_CI}; })();
+		var _AceCounter=(function(){var G=_AceGID;if(G.o!=0){var _A=G.val[G.o-1];var _G=( _A[0]).substr(0,_A[0].indexOf('.'));var _C=(_A[7]!='0')?(_A[2]):_A[3];	var _U=( _A[5]).replace(/\,/g,'_');var _S=((['<scr','ipt','type="text/javascr','ipt"></scr','ipt>']).join('')).replace('tt','t src="'+location.protocol+ '//cr.acecounter.com/Web/AceCounter_'+_C+'.js?gc='+_A[2]+'&amp;py='+_A[4]+'&amp;gd='+_G+'&amp;gp='+_A[1]+'&amp;up='+_U+'&amp;rd='+(new Date().getTime())+'" t');document.writeln(_S); return _S;} })();
+		var path = window.location.pathname;
+		var chk = path.indexOf('top5');
+		var chk2 = path.indexOf('resultCard');
+		var chk3 = path.indexOf('goodRDA');
+		var chk4 = path.indexOf('kidofcomdtyPrdlstCode');
+		var chk5 = path.indexOf('mlrdCurationMain');
+		var chk6 = path.indexOf('cityfarmer');
+		var chk7 = path.indexOf('companion');
+		var chk8 = path.indexOf('rtnfarmer');
+		var chk9 = path.indexOf('frmprdIncomeInfoNew');
+		var chk10 = path.indexOf('contentSub');
+		var chk11 = path.indexOf('contentMain');
+		var chk12 = path.indexOf('acp_adopancmEntry');
+		if(chk != -1 || chk2 != -1 || chk3 != -1 || chk4 != -1 || chk5 != -1 || chk6 != -1 || chk7 != -1 || chk8 != -1 || chk9 != -1 || chk10 != -1 || chk11 != -1 || chk12 != -1 ){
+			var _AceCounter2=(function(){var G=_AceGID;if(G.o!=0){var _A=G.val[G.o-1];var _G=( _A[0]).substr(0,_A[0].indexOf('.'));var _C=(_A[7]!='0')?(_A[2]):_A[3];	var _U=( _A[5]).replace(/\,/g,'_');var _S=((['<scr','ipt','type="text/javascr','ipt"></scr','ipt>']).join('')).replace('tt','t src="'+location.protocol+ '//cr.acecounter.com/Web/AceCounter_'+_C+'.js?gc='+_A[2]+'&amp;py='+_A[4]+'&amp;gd='+_G+'&amp;gp='+_A[1]+'&amp;up='+_U+'&amp;rd='+(new Date().getTime())+'" t');document.writeln(_S); return _S;} })();
+			var _AceCounter3=(function(){var G=_AceGID;if(G.o!=0){var _A=G.val[G.o-1];var _G=( _A[0]).substr(0,_A[0].indexOf('.'));var _C=(_A[7]!='0')?(_A[2]):_A[3];	var _U=( _A[5]).replace(/\,/g,'_');var _S=((['<scr','ipt','type="text/javascr','ipt"></scr','ipt>']).join('')).replace('tt','t src="'+location.protocol+ '//cr.acecounter.com/Web/AceCounter_'+_C+'.js?gc='+_A[2]+'&amp;py='+_A[4]+'&amp;gd='+_G+'&amp;gp='+_A[1]+'&amp;up='+_U+'&amp;rd='+(new Date().getTime())+'" t');document.writeln(_S); return _S;} })();
+			var _AceCounter5=(function(){var G=_AceGID;if(G.o!=0){var _A=G.val[G.o-1];var _G=( _A[0]).substr(0,_A[0].indexOf('.'));var _C=(_A[7]!='0')?(_A[2]):_A[3];	var _U=( _A[5]).replace(/\,/g,'_');var _S=((['<scr','ipt','type="text/javascr','ipt"></scr','ipt>']).join('')).replace('tt','t src="'+location.protocol+ '//cr.acecounter.com/Web/AceCounter_'+_C+'.js?gc='+_A[2]+'&amp;py='+_A[4]+'&amp;gd='+_G+'&amp;gp='+_A[1]+'&amp;up='+_U+'&amp;rd='+(new Date().getTime())+'" t');document.writeln(_S); return _S;} })();
+			var _AceCounter6=(function(){var G=_AceGID;if(G.o!=0){var _A=G.val[G.o-1];var _G=( _A[0]).substr(0,_A[0].indexOf('.'));var _C=(_A[7]!='0')?(_A[2]):_A[3];	var _U=( _A[5]).replace(/\,/g,'_');var _S=((['<scr','ipt','type="text/javascr','ipt"></scr','ipt>']).join('')).replace('tt','t src="'+location.protocol+ '//cr.acecounter.com/Web/AceCounter_'+_C+'.js?gc='+_A[2]+'&amp;py='+_A[4]+'&amp;gd='+_G+'&amp;gp='+_A[1]+'&amp;up='+_U+'&amp;rd='+(new Date().getTime())+'" t');document.writeln(_S); return _S;} })();
+			var _AceCounter7=(function(){var G=_AceGID;if(G.o!=0){var _A=G.val[G.o-1];var _G=( _A[0]).substr(0,_A[0].indexOf('.'));var _C=(_A[7]!='0')?(_A[2]):_A[3];	var _U=( _A[5]).replace(/\,/g,'_');var _S=((['<scr','ipt','type="text/javascr','ipt"></scr','ipt>']).join('')).replace('tt','t src="'+location.protocol+ '//cr.acecounter.com/Web/AceCounter_'+_C+'.js?gc='+_A[2]+'&amp;py='+_A[4]+'&amp;gd='+_G+'&amp;gp='+_A[1]+'&amp;up='+_U+'&amp;rd='+(new Date().getTime())+'" t');document.writeln(_S); return _S;} })();
+			var _AceCounter8=(function(){var G=_AceGID;if(G.o!=0){var _A=G.val[G.o-1];var _G=( _A[0]).substr(0,_A[0].indexOf('.'));var _C=(_A[7]!='0')?(_A[2]):_A[3];	var _U=( _A[5]).replace(/\,/g,'_');var _S=((['<scr','ipt','type="text/javascr','ipt"></scr','ipt>']).join('')).replace('tt','t src="'+location.protocol+ '//cr.acecounter.com/Web/AceCounter_'+_C+'.js?gc='+_A[2]+'&amp;py='+_A[4]+'&amp;gd='+_G+'&amp;gp='+_A[1]+'&amp;up='+_U+'&amp;rd='+(new Date().getTime())+'" t');document.writeln(_S); return _S;} })();
+			var _AceCounter9=(function(){var G=_AceGID;if(G.o!=0){var _A=G.val[G.o-1];var _G=( _A[0]).substr(0,_A[0].indexOf('.'));var _C=(_A[7]!='0')?(_A[2]):_A[3];	var _U=( _A[5]).replace(/\,/g,'_');var _S=((['<scr','ipt','type="text/javascr','ipt"></scr','ipt>']).join('')).replace('tt','t src="'+location.protocol+ '//cr.acecounter.com/Web/AceCounter_'+_C+'.js?gc='+_A[2]+'&amp;py='+_A[4]+'&amp;gd='+_G+'&amp;gp='+_A[1]+'&amp;up='+_U+'&amp;rd='+(new Date().getTime())+'" t');document.writeln(_S); return _S;} })();
+			var _AceCounter10=(function(){var G=_AceGID;if(G.o!=0){var _A=G.val[G.o-1];var _G=( _A[0]).substr(0,_A[0].indexOf('.'));var _C=(_A[7]!='0')?(_A[2]):_A[3];	var _U=( _A[5]).replace(/\,/g,'_');var _S=((['<scr','ipt','type="text/javascr','ipt"></scr','ipt>']).join('')).replace('tt','t src="'+location.protocol+ '//cr.acecounter.com/Web/AceCounter_'+_C+'.js?gc='+_A[2]+'&amp;py='+_A[4]+'&amp;gd='+_G+'&amp;gp='+_A[1]+'&amp;up='+_U+'&amp;rd='+(new Date().getTime())+'" t');document.writeln(_S); return _S;} })();
+			var _AceCounter11=(function(){var G=_AceGID;if(G.o!=0){var _A=G.val[G.o-1];var _G=( _A[0]).substr(0,_A[0].indexOf('.'));var _C=(_A[7]!='0')?(_A[2]):_A[3];	var _U=( _A[5]).replace(/\,/g,'_');var _S=((['<scr','ipt','type="text/javascr','ipt"></scr','ipt>']).join('')).replace('tt','t src="'+location.protocol+ '//cr.acecounter.com/Web/AceCounter_'+_C+'.js?gc='+_A[2]+'&amp;py='+_A[4]+'&amp;gd='+_G+'&amp;gp='+_A[1]+'&amp;up='+_U+'&amp;rd='+(new Date().getTime())+'" t');document.writeln(_S); return _S;} })();
+			var _AceCounter12=(function(){var G=_AceGID;if(G.o!=0){var _A=G.val[G.o-1];var _G=( _A[0]).substr(0,_A[0].indexOf('.'));var _C=(_A[7]!='0')?(_A[2]):_A[3];	var _U=( _A[5]).replace(/\,/g,'_');var _S=((['<scr','ipt','type="text/javascr','ipt"></scr','ipt>']).join('')).replace('tt','t src="'+location.protocol+ '//cr.acecounter.com/Web/AceCounter_'+_C+'.js?gc='+_A[2]+'&amp;py='+_A[4]+'&amp;gd='+_G+'&amp;gp='+_A[1]+'&amp;up='+_U+'&amp;rd='+(new Date().getTime())+'" t');document.writeln(_S); return _S;} })();
+		}
+	//]]>
+	</script><script src="./농촌진흥청_files/AceCounter_AW.js.다운로드" type="text/javascript"></script>
+
+	<noscript><img src='http://gtb4.acecounter.com:8080/?uid=AI2A34323135923&amp;je=n&amp;' style="border:0;width:0px;height:0px" alt='빈값'/></noscript>	
+	<!-- AceCounter Log Gathering Script End -->
+	
+	</footer>
+	<!-- //footer -->
+
+
+		
+	<!-- //footer:end -->
+
+	<!-- 20161110 수정 -->
+	<!-- S quickService -->
+	<div id="quickSet"></div>
+	<!-- // E quickService -->
+</div>
+<script type="text/javascript">
+ 	$("#setSNS").click(function(){
+		var appendHtml;
+		var appendHtml2;
+ 		appendHtml = "<iframe title=\"농촌진흥청 페이스북\" class=\"facebook_i\" style=\"padding:0;border:none;overflow:hidden;height:230px;\" frameborder=\"0\" scrolling=\"no\" src=\"http://www.facebook.com/plugins/page.php?href=http%3A%2F%2Fwww.facebook.com%2Frdakorea%2F&amp;tabs=timeline&amp;width=260&amp;height=230&amp;small_header=true&amp;adapt_container_width=true&amp;hide_cover=true&amp;show_facepile=false&amp;appId=633721533463343\"></iframe>";
+		appendHtml2="\<iframe id=\"iFrmTwitter\" name=\"iFrmTwitter\" frameborder=\"0\" marginwidth=\"0\" scrolling=\"no\" marginheight=\"0\" src=\"/etc/web/twitterFrame.jsp\" title=\"트위터\" style=\"margin: 0;width: 255px;height: 1000px !important;\" ></iframe>";
+		$(".obj2_tab_div1").html(appendHtml);
+		$(".obj2_tab_div2").html(appendHtml2);
+ 	});
+</script>
+
+<!-- //wrap:end -->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- popup -->
+
+<script type="text/javascript">
+//<![CDATA[
+function notice_getCookie( name ) {
+	var nameOfCookie = name + "=";
+	var x = 0;
+	while ( x <= document.cookie.length ) {
+		var y = (x+nameOfCookie.length);
+		if ( document.cookie.substring( x, y ) == nameOfCookie ) {
+			if ( (endOfCookie=document.cookie.indexOf( ";", y )) == -1 )
+				endOfCookie = document.cookie.length;
+			return unescape( document.cookie.substring( y, endOfCookie ) );
+		}
+
+		x = document.cookie.indexOf( " ", x ) + 1;
+		if ( x == 0 )
+			break;
+	}
+	return "";
+}
+$(document).ready(function() {
+	//window.open('/sys/popUpSysView.do?preview=R&popup_no=100000735648','100000735648','width=440px,height=490px,left=100px,top=100,scrollbars=yes'); // 팝업윈도우의 경로와 크기를 설정 하세요
+	//window.open('/sys/popUpSysView.do?preview=R&popup_no=100000735317','100000735317','width=530px,height=330px,left=100px,top=100,scrollbars=yes'); // 팝업윈도우의 경로와 크기를 설정 하세요
+	
+
+});
+//]]>	
+</script> 
+
+
+
+
+
+</body></html>

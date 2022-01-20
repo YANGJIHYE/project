@@ -1,0 +1,50 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+
+
+body{font-family: 'Nanum Gothic', sans-serif;} /* 먼저설정 */
+
+/* 레이아웃 */
+#wrap{width: 100%; height: auto;}
+#header{width: 100%; height: 105px; position: fixed; z-index: 999; background: rgba(255, 255, 255, .8);} /* 헤더를  position: fixed;픽스를 해서 상단에 고정된다 */ /*기준점은 렐라티브 맨위로 올릴때는 픽스드나 앱솔루트*/
+#banner{}
+#content{width: 100%; height: 500px; background: palegreen;}
+#footer{width: 100%; height: 150px; background: paleturquoise;}
+
+/* header */
+.header-inner{width: 1440px; margin: 0 auto;}
+.header-inner .logo{float: left;}/* 왼쪽으로 와라 */
+.header-inner .logo a{display: block;}
+.header-inner .logo a img{padding-top: 20px;} /* 이미지는 인라인블록이므로 패딩이 먹힌다 검사해서 위라래로 움직여 패딩을 설정해본다*/
+.header-inner .nav{float: left;}/* 왼쪽으로 */
+.header-inner .nav .bg{position: absolute; width: 100%; height: 0px; background:rgb(92, 176, 255); top: 105px; left: 0; z-index: 3; transition: .5s;} 
+/* 메뉴큰네모박스가 내려오는거 탑에서 105px만큼 내려보내고 왼쪽0으로 */ /* 트렌지션주려면 높이를 0으로한다음 오버에서 높이를 준다 */
+
+.header-inner .nav:hover .bg{height: 230px;}
+.header-inner .nav .bg span{width: 1440px; height: 0px; background: url(../image/gnb_blind_bg.png) no-repeat 400px bottom; display: block; opacity: .5;}
+.header-inner .nav:hover .bg span{height: 230px;}
+.header-inner .nav .menu{margin-left: 100px;}
+ /* 메뉴글씨전체박스를를 상단에서 위치를 변경하고싶을떄 여기서 마진을 준다. 메뉴전체를 옆으로 보내고싶을때 쓴다*/
+.header-inner .nav .menu>ul{} 
+.header-inner .nav .menu>ul>li{float: left; margin-right: 30px; width: 150px; text-align: center;}
+/* 메뉴 글자박스 사이,사이의 간격주고싶을떄 margin-right로 간격을 조정할수있다 */
+.header-inner .nav .menu>ul>li:nth-child(1)>a{color: red;}
+.header-inner .nav .menu>ul>li:nth-child(2)>a{color: orange;}
+.header-inner .nav .menu>ul>li:nth-child(3)>a{color: yellow;}
+.header-inner .nav .menu>ul>li:nth-child(4)>a{color: green;}
+.header-inner .nav .menu>ul>li:nth-child(5)>a{color: blue;}
+.header-inner .nav .menu>ul>li>a{font-size: 25px; font-weight: 700; color: #1e1e1e; display: block;  padding: 40px 20px;} 
+/* 블록된글씨 패딩을준다 */
+.header-inner .nav .menu>ul>li>ul{ height:0px; overflow: hidden; transition: height .5s;padding: 0 0 0 20px; position: absolute; z-index: 4; box-sizing: border-box; width: 150px;}
+/*서치까지 다 설정하고 디스플레이 논에서 블럭으로 바꾸기*/ /* 리스트에 패딩주고싶으면 */
+.header-inner .nav .menu>ul:hover>li>ul{ height:230px; }
+.header-inner .nav .menu>ul>li:hover>ul{ background: rgb(0, 172, 202);}
+.header-inner .nav .menu>ul>li>ul li{text-align: left;}
+.header-inner .nav .menu>ul>li>ul li a{display: block; padding: 10px 0; color: white; font-weight: 700;} /* 투텝스가 늘어난다 */
+.header-inner .nav .menu>ul>li>ul li a:hover{color: crimson;}
+.header-inner .search{ float: right; margin-top: 38px;} /* 서치야 오른쪽으로와 */ /* 서치그림를 가운데보내고싶을땐 마진탑을써준다 */
+.header-inner .search .search-img{width: auto; height: 32px; background: #00a2ff; border-radius: 18px; padding: 2px 10px 2px 80px;}
+.header-inner .search .search-img a{display: block; width: 33px; height: 32px; background: url(../image/totalsearch_ico.png) no-repeat center;}
+
+
+#banner img{width: 100%; /*vertical-align: bottom;*/display: block;} /* 이게없으면 스크롤바생김 */ /* vertical-align: bottom; 또는 블록화 하면 이미지여백이사라짐 */

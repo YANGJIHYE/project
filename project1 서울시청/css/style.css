@@ -1,0 +1,34 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap');
+
+body{font-family: 'Nanum Gothic', sans-serif; font-size: 16px; color: #222; line-height: 1;}
+
+#header{width: 100%; height: 168px;}
+#banner{width: 100%; height: 352px; background: rgb(60, 255, 0);}
+#contents{width: 100%; height: 2242px; background: yellow;}
+#footer{width: 100%; height: 190px; background: rgb(14, 14, 13);}
+
+/* /* 머릿말 */
+.header-inner{width: 1152px; margin: 0 auto; height: 100%; background: #fff;}
+.header-inner-top{width: 100%; height: 48px; }
+.header-inner-top .icon_set_common{width:110px; height: 48px; background: url(../img/icon_set_common.png) no-repeat 0 -160px; float: left;}
+.header-inner-top .nav{float: left; margin-left: 47px;}
+.header-inner-top .nav > ul{}
+.header-inner-top .nav > ul > li{float: left;}
+.header-inner-top .nav > ul > li > a{display: block; padding: 15px 10px; font-weight: bold;}
+.header-inner-top .gnb{float: right;}
+.header-inner-top .gnb ul{overflow: hidden; margin-right: 9px;}
+.header-inner-top .gnb ul li{float: left;}
+.header-inner-top .gnb ul li a{font-size: 14px; display: block; padding: 15px 9px;}
+
+.header-inner-bottom{margin-top: 36px;}
+.header-inner-bottom .logo{width: 178px; height: 82px; background: url(../img/logo_new.png) no-repeat 0px 0px; float: left;}
+.header-inner-bottom .search{float: left; margin-left: 155px; width: 458px; height: 40px;  border: solid 3px #4e75ba; padding:5px 10px; box-sizing: border-box; position: relative;}
+.header-inner-bottom .search input{width: 300px; border: none}
+.header-inner-bottom .search img{position: absolute; top: 10px; right: 40px; }
+.header-inner-bottom .search .searchIcon{width: 35px; height: 33px; background: url(../img/icon_set_common.png) no-repeat -35px -98px; display: block; position: absolute; top: 0; right: 0}
+.header-inner-bottom .search input::placeholder{color:#4e75ba; }
+.header-inner-bottom .weather{float: right;}
+.header-inner-bottom .weather .icon-area{width: 58px; height: 47px; background:  url(../img/weather\ icon.png) no-repeat 0 50%;}
+.header-inner-bottom .weather .temp-txt{}
+.header-inner-bottom .weather .temp-txt p{} */

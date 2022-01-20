@@ -1,0 +1,68 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+body{font-family: 'Nanum Gothic', sans-serif 'Noto Sans KR', sans-serif; font-size: 14px; color: #222; line-height: 1;}
+#header{width: 100%; height: 110px;}
+#header-top{width: 100%; height: 52px; margin: 0 -1px; }
+#banner-bottom{width: 100%; height: 462px; background: rgb(60, 255, 0);}
+#contents{width: 100%; height: 1342px; background: yellow;}
+#footer{width: 100%; height: 150px; background: rgb(14, 14, 13);}
+
+#header .header-top{position: relative;}
+#header .header-top .logo{ background: url(../농촌진흥청_files/rda_logo.png) no-repeat 100%; width: 120px; height: 38px; margin: 9px 30px 14px 95px;}
+#header .header-top .gnb{}
+#header .header-top .gnb>ul{float:left; position: absolute; top: 12px; left: 245px;}
+.header-top .gnb>ul>li{float: left;}
+.header-top .gnb>ul>li>a{display: block; padding-right: 8px; color: rgb(99, 97, 97);}
+.header-top .gnb>ul>li>a>span{background: rgb(240, 236, 236); font-size: 12px; padding: 0 9px; color: rgb(80, 76, 76);}
+.header-top .search{position: absolute; top: 0; position: absolute; right: 365px;}
+.search form{position: relative; width: 244px; height: 40px; background: rgb(240, 238, 238); border: none; margin: 1px; box-sizing: border-box; background: url(../농촌진흥청_files/logo mark/search_icon.png) no-repeat;}
+.search form input{display: block; width: 150px; height:40px; line-height: 40px; float: left; border: none; background: rgb(240, 238, 238); font-size: 15px; padding-left: 10px;}
+.search form img{display: block; float: left; position: absolute; top: 10px; right: 10px; width: 19px; height: 19px;}
+.header-top .link1{background: url(../농촌진흥청_files/logo/korea_flag.png) no-repeat; width: 113px; height: 41px; float: left; position: absolute; top: 0; right: 210px;}
+.header-top .link2{background: url(../농촌진흥청_files/logo/header_innogov.png) no-repeat; width: 98px; height: 45px; float: left; position: absolute; top: -2px; right: 99px;}
+
+.header-bottom{}
+.header-bottom .nav{background: #225898;}
+.header-bottom .nav>ul{margin-left: 174px; width: 839px;}
+.header-bottom .nav>ul>li{background: #225898; height: 58px; line-height: 58px; float: left;}
+.header-bottom .nav>ul>li>a{display: block; font-size: 18px; color: #000; padding: 0 15px;}
+.header-bottom .nav>ul>li .width100{width: 100%; height: auto; position: absolute; top: 119px; left: 0; background: #fff; display: none; }
+.header-bottom .nav>ul>li:hover .width100{display: block;} 
+.header-bottom .nav>ul>li .width100 > ul{width: 1600px; margin: 0 auto; background: #fff;} 
+.header-bottom .nav>ul>li .width100 > ul li{/* width: 250px; */} 
+
+/* .header-bottom .nav>ul>li> ul{margin-left: 174px; width: 100px;} */
+/*.depth_1{background: darkcyan; width: 300px;} */
+.depth1{float: left; height: auto;}
+./* depth1::after{content: ""; width: 1px; height: 250px; background: #ddd; position: absolute; top: 0; right: 0;} */
+.depth2{float: left;  height: auto; display: block; background: turquoise;}
+.depth3{float: left; height: auto;}
+.depth4{float: left; height: auto;}
+.depth5{float: left; height: auto;}
+.depth6{float: left; height: auto;}
+.depth7{float: left;  height: auto; display: block;}
+.depth8{float: left; height: auto;}
+.depth9{float: left; height: auto;}
+.depth10{float: left; height: auto;}
+.depth11{float: left; height: auto;}
+.depth12{float: left;  height: auto; display: block;}
+.depth13{float: left; height: auto;}
+.depth14{float: left; height: auto;}
+.depth15{float: left; height: auto;}
+.depth16{float: left; height: auto;}
+.depth17{float: left;  height: auto; display: block;}
+.depth18{float: left; height: auto;}
+.depth19{float: left; height: auto;}
+.depth20{float: left; height: auto;}
+.depth21{float: left;  height: auto; display: block;}
+.depth22{float: left; height: auto;}
+.depth23{float: left; height: auto;}
+.depth24{float: left; height: auto;}
+.depth25{float: left;  height: auto; display: block;}
+.depth26{float: left; height: auto;}
+.header-ottom .nav>ul>li> ul li{}
+/* .header-ottom .nav>ul>li> ul li a{display: block; color: #000;}
+.header-bottom .nav>ul>li> div> ul>div>li>ul{}.header-ottom .nav>ul>li> ul li ul>li{}
+.header-ottom .nav>ul>li> ul li ul>a{display: block; color: #000;} */
+.header-bottom .nav {}
